@@ -8,7 +8,7 @@ current_directory = str(pathlib.Path().resolve())
 
 py_file_name = input("py file name: ")
 
-result = subprocess.run(['python3.10', '-m' 'pyflowchart', current_directory + '/' + py_file_name, '-f', 'main'],
+result = subprocess.run(['python3.10', '-m' 'pyflowchart', '--no-simplify', current_directory + '/' + py_file_name, '-f', 'main'],
                         stdout=subprocess.PIPE)
 
 flowchart_code = result.stdout.decode('utf-8')
