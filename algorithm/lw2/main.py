@@ -1,28 +1,14 @@
 def main():
-
-    numbers = []
     i = 1
-
+    number = None
+    prev_value = None
     print('Введите числа, 0 означает конец ввода')
-    while True:
+    while number != 0:
         number = int(input(f'Число #{i}: '))
-        numbers.append(number)
-        i = i + 1
-        if number == 0:
-            break
-
-    result = []
-
-    for j in range(len(numbers)):
-        number = numbers[j]
-        if number < 0 < j:
-            result.append(str(numbers[j - 1]))
-
-    if len(result) > 0:
-        print('Все числа, идущие перед отрицательными числами:')
-        print(", ".join(result))
-    else:
-        print('Нет отрицательных чисел')
+        i += 1
+        if number < 0 and prev_value is not None:
+            print(f'Перед отрицательный числом {number} было число: {prev_value}')
+        prev_value = number
 
 
 if __name__ == '__main__':
