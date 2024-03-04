@@ -4,8 +4,6 @@
 
 using namespace std;
 
-// /home/floy/www/university/it/c++/lab4/asc.txt
-
 int main() {
 
     string filename;
