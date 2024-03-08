@@ -1,0 +1,56 @@
+1) INSERT INTO employees
+
+     SELECT 
+       nextval('employees_id_seq'::regclass),
+       LEFT(md5(random()::text), 30),
+       (floor(random()* (10-1 + 1) + 1)),
+       (floor(random()* (100-1 + 1) + 1))
+
+     FROM generate_series(1,10);
+
+2) DELETE FROM orders WHERE paid = 'no' AND date < NOW()
+
+3) WITH best_employees AS (
+    SELECT employees.id, COUNT(orders.employee_id) as order_count FROM employees 
+    INNER JOIN orders ON employees.id = orders.employee_id 
+    GROUP BY employees.id
+    ORDER BY order_count DESC
+    LIMIT 3
+  )
+
+  UPDATE employees SET commision = commision + 10   
+  WHERE id IN (SELECT id FROM best_employees)
+
+4) WITH best_employees_subq AS (
+    SELECT employees.id, employees.name, employees.commision, employees.experience
+    FROM employees 
+    INNER JOIN orders ON employees.id = orders.employee_id 
+    GROUP BY employees.id
+    HAVING COUNT(orders.employee_id) > 3 AND employees.experience >= 5
+  ) 
+
+  INSERT INTO best_employees
+  SELECT * FROM best_employees_subq 
+
+5) WITH 
+old_customers AS (
+  SELECT customers.id
+  FROM customers
+  WHERE EXTRACT(year FROM NOW()) - EXTRACT(year FROM 
+    (
+      SELECT orders.date FROM orders
+      WHERE orders.paid = 'yes'
+        AND orders.customer_id = customers.id
+      GROUP BY orders.id
+      ORDER BY date DESC
+      LIMIT 1
+    )
+   ) > 1
+),
+
+deleted_orders AS (
+ DELETE FROM orders WHERE customer_id IN (SELECT id FROM old_customers)
+ returning customer_id
+)
+
+DELETE FROM customers WHERE id IN (SELECT customer_id FROM deleted_orders);

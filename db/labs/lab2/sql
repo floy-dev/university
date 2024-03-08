@@ -37,8 +37,8 @@
 	   FROM orders
 	   INNER JOIN customers ON customers.id = orders.customer_id
 	   WHERE EXTRACT(month FROM date) BETWEEN 1 AND 3
- 	   AND EXTRACT(year FROM date) = 2025
-	   AND customers.address = '9aef9881dfb4c439ab1b738d19268b9a'
+ 	   AND EXTRACT(year FROM date) = 2001
+	   AND customers.address = 'Брест'
 	)
 
 	SELECT orders_in_2001.customer_id,
