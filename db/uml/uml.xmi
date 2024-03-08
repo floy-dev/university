@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.38.3-b9eb1f740 (Applications 23.08.3) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="UML Model">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uUyCKOaAXmc4y" name="char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="udnGvhVp4f7vS" name="int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ushqeQ3HJNtss" name="float" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ulD30zOOEvQrY" name="double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uFpCRz77ajEY8" name="bool" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ua0tPUhX16mhl" name="string" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uO6bxLODMbRwu" name="unsigned char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uXvtWgvXiK8ef" name="signed char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uMANIjJPcKGk2" name="unsigned int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uWLvuM2E54VYK" name="signed int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ukXrDeMFcoDOu" name="short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ux0JbQJZivFg3" name="unsigned short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uh4t2zWT3hfP5" name="signed short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uYM0orUDtnLnN" name="long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uAkK5c7KAWRxw" name="signed long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="udgYg7epWUHHG" name="unsigned long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u9chx8EkNTp25" name="long double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uS9bSGuYySV9W" name="wchar_t" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uK6YEXPAsovyc" name="datetime" stereotype="dataType"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="uApfgoqXcKVwC" name="new_class"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Hotel">
+      <packagedElement xmi:type="uml:Entity" xmi:id="uudEQZctGbSzg" name="clients">
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uP6MlqPUBascv" name="id" visibility="private" type="udnGvhVp4f7vS" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uPiTURunSKIOA" name="passport" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uWByoZErMafDj" name="birthday" visibility="private" type="uaKGhtQcA4UKR" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="u5K2IjCVIWdpf" name="citizenship" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Entity" xmi:id="uCxYF9nSk9dv9" name="rooms">
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="utFnU2HWoRnV3" name="id" visibility="private" type="ud51pQTO5xSzL" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uX400fGd05fCT" name="number" visibility="private" type="uwnVXHzDjdvbK" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uVzXMULuic6se" name="category" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uWC4ZF4c52zwc" name="rent_per_day" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Entity" xmi:id="uJZZiFTLyLYk8" name="administrators">
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uTIAlhCepWs6l" name="id" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uDGdSB9mE5lvo" name="phone" visibility="private" type="uApfgoqXcKVwC" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="udF8AYM368C2B" name="first_name" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uAbz8shtLCHSt" name="last_name" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uDsLLyjConXXy" name="surname" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Entity" xmi:id="uHuFEz9VCXaJc" name="bookings">
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uPT5OrHeH6KmG" name="id" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="ujrcoH2GDYlzu" name="check_in" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uz0SwpMSomu88" name="check_out" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="ufFC3t9bucic5" name="date" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="u0r7Zw07103bz" name="total_cost" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uwkoQRDASwECM" name="administrator_id" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="ugrYZLDlZzjvM" name="client_id" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+        <ownedAttribute xmi:type="uml:EntityAttribute" xmi:id="uoLhpjctyrsG7" name="room_id" visibility="private" type="" initialValue="" dbindex_type="1100" values="" attributes="" auto_increment="0" allow_null="0"/>
+      </packagedElement>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uZN8u1apenUMb" name="Hotel" type="9" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="115" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <entitywidget xmi.id="uJZZiFTLyLYk8" localid="uE7oIkVqNXjWI" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="312.957" y="444.783" width="100" height="113" isinstance="0" showstereotype="2" showattsigs="0"/>
+              <entitywidget xmi.id="uCxYF9nSk9dv9" localid="uERgiueQyC7Hk" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="150.826" y="284.13" width="93" height="95" isinstance="0" showstereotype="2" showattsigs="0"/>
+              <entitywidget xmi.id="uHuFEz9VCXaJc" localid="usY49os9ekyAu" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="137" y="434" width="114" height="167" isinstance="0" showstereotype="2" showattsigs="0"/>
+              <entitywidget xmi.id="uudEQZctGbSzg" localid="uZm43ScIbsUNf" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Noto Sans,10,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="12.7826" y="446.783" width="79" height="95" isinstance="0" showstereotype="2" showattsigs="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uZN8u1apenUMb" documentation="" uniqueid="uoLhpjctyrsG7"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Entity_Relationship_Model" type="836" open="1">
+          <listitem id="uJZZiFTLyLYk8" type="832" open="1">
+            <listitem id="udF8AYM368C2B" type="833" open="0"/>
+            <listitem id="uTIAlhCepWs6l" type="833" open="0"/>
+            <listitem id="uAbz8shtLCHSt" type="833" open="0"/>
+            <listitem id="uDGdSB9mE5lvo" type="833" open="0"/>
+            <listitem id="uDsLLyjConXXy" type="833" open="0"/>
+          </listitem>
+          <listitem id="uHuFEz9VCXaJc" type="832" open="1">
+            <listitem id="uwkoQRDASwECM" type="833" open="0"/>
+            <listitem id="ujrcoH2GDYlzu" type="833" open="0"/>
+            <listitem id="uz0SwpMSomu88" type="833" open="0"/>
+            <listitem id="ugrYZLDlZzjvM" type="833" open="0"/>
+            <listitem id="ufFC3t9bucic5" type="833" open="0"/>
+            <listitem id="uPT5OrHeH6KmG" type="833" open="0"/>
+            <listitem id="uoLhpjctyrsG7" type="833" open="0"/>
+            <listitem id="u0r7Zw07103bz" type="833" open="0"/>
+          </listitem>
+          <listitem id="uudEQZctGbSzg" type="832" open="0">
+            <listitem id="uWByoZErMafDj" type="833" open="0"/>
+            <listitem id="u5K2IjCVIWdpf" type="833" open="0"/>
+            <listitem id="uP6MlqPUBascv" type="833" open="0"/>
+            <listitem id="uPiTURunSKIOA" type="833" open="0"/>
+          </listitem>
+          <listitem id="uZN8u1apenUMb" type="834" label="Hotel" open="0"/>
+          <listitem id="uCxYF9nSk9dv9" type="832" open="1">
+            <listitem id="uVzXMULuic6se" type="833" open="0"/>
+            <listitem id="utFnU2HWoRnV3" type="833" open="0"/>
+            <listitem id="uX400fGd05fCT" type="833" open="0"/>
+            <listitem id="uWC4ZF4c52zwc" type="833" open="0"/>
+          </listitem>
+        </listitem>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="uFpCRz77ajEY8" type="829" open="0"/>
+            <listitem id="uK6YEXPAsovyc" type="829" open="1"/>
+            <listitem id="ulD30zOOEvQrY" type="829" open="0"/>
+            <listitem id="ushqeQ3HJNtss" type="829" open="0"/>
+            <listitem id="u9chx8EkNTp25" type="829" open="0"/>
+            <listitem id="uYM0orUDtnLnN" type="829" open="0"/>
+            <listitem id="ukXrDeMFcoDOu" type="829" open="0"/>
+            <listitem id="uXvtWgvXiK8ef" type="829" open="0"/>
+            <listitem id="uWLvuM2E54VYK" type="829" open="0"/>
+            <listitem id="uAkK5c7KAWRxw" type="829" open="0"/>
+            <listitem id="uh4t2zWT3hfP5" type="829" open="0"/>
+            <listitem id="ua0tPUhX16mhl" type="829" open="0"/>
+            <listitem id="uO6bxLODMbRwu" type="829" open="0"/>
+            <listitem id="uMANIjJPcKGk2" type="829" open="0"/>
+            <listitem id="udgYg7epWUHHG" type="829" open="0"/>
+            <listitem id="ux0JbQJZivFg3" type="829" open="0"/>
+            <listitem id="uS9bSGuYySV9W" type="829" open="0"/>
+          </listitem>
+          <listitem id="uApfgoqXcKVwC" type="813" open="1"/>
+        </listitem>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="C++"/>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>

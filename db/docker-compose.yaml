@@ -1,0 +1,24 @@
+version: '3'
+services:
+
+    db:
+        image: postgres:16
+        ports:
+            - "5432:5432"
+        environment:
+            - POSTGRES_USER=user
+            - POSTGRES_PASSWORD=pass
+        volumes:
+            - "./init:/docker-entrypoint-initdb.d"
+            - ./data:/var/lib/postgresql/data
+
+    adminer:
+        image: adminer:latest
+        container_name: adminer-main
+        ports:
+            - "8083:8080"
+        depends_on:
+            - db
+        links:
+            - db
+
