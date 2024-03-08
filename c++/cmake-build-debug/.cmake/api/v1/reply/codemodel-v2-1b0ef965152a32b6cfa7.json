@@ -94,8 +94,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/floy/www/university/it/c++/cmake-build-debug",
-		"source" : "/home/floy/www/university/it/c++"
+		"build" : "/home/floy/www/university/c++/cmake-build-debug",
+		"source" : "/home/floy/www/university/c++"
 	},
 	"version" : 
 	{

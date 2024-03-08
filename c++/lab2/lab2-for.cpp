@@ -18,6 +18,7 @@ int main()
 
     h = (b - a) / n;
     double max, avg = 0;
+    int cycles = 0;
 
     for (int i = 0; i <= n; i++)
     {
@@ -37,10 +38,13 @@ int main()
         if (y > max) {
             max = y;
         }
+        cycles++;
 
         cout << "При x = " << x << ", y = " << y << endl;
     }
 
-    cout << "Наибольшее значение: " << max << endl;
-    cout << "Среднее значение: " << avg / n << endl;
+    if (cycles > 0) {
+        cout << "Наибольшее значение: " << max << endl;
+        cout << "Среднее значение: " << avg / cycles << endl;
+    }
 }
