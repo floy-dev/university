@@ -1,5 +1,5 @@
 def find_maximal_paths(graph, start_vertex):
-    def dfs(current_path, visited):
+    def depth_first_search(current_path, visited):
         current_vertex = current_path[-1]
         neighbors = graph[current_vertex]
         no_extension = True
@@ -8,18 +8,17 @@ def find_maximal_paths(graph, start_vertex):
             if is_connected and vertex not in visited:
                 no_extension = False
                 visited.add(vertex)
-                dfs(current_path + [vertex], visited)
+                depth_first_search(current_path + [vertex], visited)
                 visited.remove(vertex)
 
         if no_extension:
-            # Добавляем путь, если он максимален (нет возможности продолжить)
             maximal_paths.append(current_path)
 
-    # Индексация вершин в матрице смежности начинается с 0, поэтому уменьшаем на 1
     start_vertex -= 1
     visited = {start_vertex}
+
     maximal_paths = []
-    dfs([start_vertex], visited)
+    depth_first_search([start_vertex], visited)
     return maximal_paths
 
 
@@ -50,9 +49,9 @@ graph_2 = [
 ]
 
 
-start_vertex = 1
+input_start_vertex = 1
 
 print('G1')
-print_paths(find_maximal_paths(graph_1, start_vertex))
+print_paths(find_maximal_paths(graph_1, input_start_vertex))
 print('G2')
-print_paths(find_maximal_paths(graph_2, start_vertex))
+print_paths(find_maximal_paths(graph_2, input_start_vertex))
