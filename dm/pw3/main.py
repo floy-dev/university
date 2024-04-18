@@ -46,7 +46,7 @@ def print_huffman_dictionary(dictionary):
         print(item + ': ' + dictionary[item])
 
 
-text = "Dmitriev"
+text = "Дискретная математика"
 
 frequency_list = get_frequency_list(text)
 print_huffman_dictionary(huffman(frequency_list))
