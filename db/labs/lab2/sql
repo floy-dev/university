@@ -66,4 +66,23 @@
 19) SELECT * FROM administrators WHERE LEFT(first_name, 1) = 'Д'
 20) SELECT SUM(bookings.price) FROM bookings
       WHERE date = '2023-03-13'
-
+21) SELECT clients.id, clients.first_name, SUM(bookings.total_cost) FROM bookings
+      JOIN clients ON bookings.client_id = clients.id
+      GROUP BY clients.id
+22) SELECT rooms.number, rooms.category
+      FROM bookings
+      JOIN rooms ON bookings.room_id = rooms.id
+      WHERE bookings.date = '2024-04-17';
+23) SELECT clients.first_name, clients.last_name, AVG(bookings.total_cost::NUMERIC) AS average_booking_cost
+	FROM clients
+	JOIN bookings ON clients.id = bookings.client_id
+	GROUP BY clients.first_name, clients.last_name;
+24) SELECT room_categories.category, SUM(bookings.total_cost) AS revenue, COUNT(bookings.id) AS bookings_count
+FROM (
+    SELECT rooms.id, rooms.category
+    FROM rooms
+    GROUP BY rooms.id, rooms.category
+) AS room_categories
+JOIN bookings ON room_categories.id = bookings.room_id
+GROUP BY room_categories.category
+ORDER BY SUM(bookings.total_cost) DESC
