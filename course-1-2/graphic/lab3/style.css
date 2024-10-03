@@ -1,0 +1,45 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    position: relative;
+    text-align: center;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.a-part {
+    opacity: 0.3;
+}
+
+.a-part:hover {
+    transition: opacity 0.2s ease;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.tippy-box {
+    background: white !important;
+    border: 1px solid black;
+    color: black;
+}
+
+.tippy-arrow {
+    bottom: -0.5px !important;
+}
