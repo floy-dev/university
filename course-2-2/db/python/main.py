@@ -38,6 +38,27 @@ def get_bookings(connection):
         print(e.diag.message_primary)
         connection.rollback()
 
+def get_administrators(connection):
+    try:
+        cursor = connection.cursor()
+        select_query = "Select first_name, last_name, surname, phone FROM administrators"
+        cursor.execute(select_query)
+        rows = cursor.fetchall()
+        cursor.close()
+
+        print("-----------+------------+------------+------------+---------------+-----------+")
+        print("%-10s | %-10s | %-10s | %-10s" %
+              ('Имя', 'Отчество', 'Фамилия', 'Телефон')
+        )
+        print("-----------+------------+------------+------------+---------------+-----------+")
+        for row in rows:
+            print("%-10s | %-10s | %-10s | %-10s" %
+                  (row[0], row[1], row[2], row[3])
+            )
+
+    except psycopg2.Error as e:
+        print(e.diag.message_primary)
+        connection.rollback()
 
 def get_clients(connection):
     try:
@@ -89,7 +110,7 @@ try:
     operation = 0
     while operation != '0':
         print()
-        print('1 - Список бронирований | 2 - Список клиентов | 3- Добавить бронь | 0 - Выход')
+        print('1 - Список бронирований | 2 - Список клиентов | 3 - Список администраторов | 4 - Добавить бронь | 0 - Выход')
         operation = input('Выберите операцию: ')
 
         if operation == '1':
@@ -97,6 +118,8 @@ try:
         if operation == '2':
             get_clients(connection)
         if operation == '3':
+            get_administrators(connection)
+        if operation == '4':
             add_booking(connection)
         if operation == '0':
             connection.close()
