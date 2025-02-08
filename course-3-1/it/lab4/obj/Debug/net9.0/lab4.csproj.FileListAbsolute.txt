@@ -1,0 +1,13 @@
+/var/www/university/course-3-1/it/lab4/bin/Debug/net9.0/lab4
+/var/www/university/course-3-1/it/lab4/bin/Debug/net9.0/lab4.dll
+/var/www/university/course-3-1/it/lab4/bin/Debug/net9.0/lab4.pdb
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/lab4.csproj.AssemblyReference.cache
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/Avalonia/resources
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/lab4.GeneratedMSBuildEditorConfig.editorconfig
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/lab4.AssemblyInfoInputs.cache
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/lab4.AssemblyInfo.cs
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/lab4.csproj.CoreCompileInputs.cache
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/Avalonia/lab4.dll
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/Avalonia/lab4.pdb
+/var/www/university/course-3-1/it/lab4/obj/Debug/net9.0/refint/Avalonia/lab4.dll
