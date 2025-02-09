@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Бронирование номеров в отеле 5*";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Доступные номера</h1>
+    <table>
+        <tr>
+            <td width="200"><p>Номер апартаментов</p></td>
+            <td width="100"><p>Этаж</p></td>
+            <td width="150"><p>Цена за ночь</p></td>
+            <td></td>
+        </tr>
+        @foreach (Room room in ViewBag.Rooms)
+        {
+            <tr>
+                <td><p>@room.Number</p></td>
+                <td><p>@room.Floor</p></td>
+                <td><p>@room.Price $</p></td>
+                <td><p><a href="/Home/Booking/@room.Id">Забронировать</a></p></td>
+            </tr>
+        }
+    </table>
+</div>

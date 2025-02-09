@@ -4,6 +4,6 @@ public class OnAddHandler
 {
     public void Message()
     {
-        Console.WriteLine("Книга добавлена");
+        Console.WriteLine("Посетитель добавлен");
     }
 }

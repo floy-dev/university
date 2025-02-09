@@ -10,7 +10,7 @@ using lab3.Context;
 
 namespace lab3.Migrations
 {
-    [DbContext(typeof(PhoneContext))]
+    [DbContext(typeof(DefaultContext))]
     [Migration("20250206195943_AddPhonesContext")]
     partial class AddPhonesContext
     {

@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Бронирование номера";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Апартаменты №@ViewBag.Room.Number</h1>
+    <div>
+        <h3>Форма бронирование апартаментов</h3>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.Room.Id" name="RoomId"/>
+            <table>
+                <tr>
+                    <td><p>Введите свое имя </p></td>
+                    <td><input type="text" name="VisitorFirtsName"/></td>
+                </tr>
+                <tr>
+                    <td><p>Введите свою фамилию </p></td>
+                    <td><input type="text" name="VisitorLastName"/></td>
+                </tr>
+                <tr>
+                    <td><p>Введите паспорт :</p></td>
+                    <td><input type="text" name="VisitorPassport"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Забронировать"/>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

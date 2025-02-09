@@ -6,33 +6,32 @@ class Program
 {
     static void Main(string[] args)
     {
-        Book book1 = new Book("Война и мир", "Л.Н. Толстой", 1869, 4);
-        Book book2 = new Book();
-        Book book3 = new Book("Филипок", "Л.Н. Толстой", 1875, 2);
+        Visitor visitor1 = new Visitor("Ivan", "79040992214", 2);
+        Visitor visitor2 = new Visitor();
+        Visitor visitor3 = new Visitor("Svetlana", "79040992632", 3);
 
-        Library library = new Library();
+        Hotel hotel = new Hotel();
 
         OnDeleteHandler onDeleteHandler = new OnDeleteHandler();
-        library.OnDelete += onDeleteHandler.Message;
+        hotel.OnDelete += onDeleteHandler.Message;
         
         OnAddHandler onAddHandler = new OnAddHandler();
-        library.OnAdd += onAddHandler.Message;
+        hotel.OnAdd += onAddHandler.Message;
         
-        library.AddBook(book1);
+        hotel.AddVisitor(visitor1);
         
-        library.DeleteByAuthor("Л.Н. Толстой");
+        hotel.DeleteByName("Dmitry");
         
-        library.AddBook(book2);
-        library.AddBook(book3);
-        library.AddBook(book1);
+        hotel.AddVisitor(visitor2);
+        hotel.AddVisitor(visitor3);
+        hotel.AddVisitor(visitor1);
 
-        List<Book> result = library.FindAllByAuthor("Л.Н. Толстой");
-        foreach (Book book in result)
+        List<Visitor> result = hotel.FindAllByName("Ivan");
+        foreach (Visitor visitor in result)
         {
-            book.GetInformation();
+            visitor.GetInformation();
         }
         
         Console.ReadKey();
-
     }
 }

@@ -19,3 +19,5 @@ build_property.RootNamespace = lab3
 build_property.ProjectDir = /var/www/university/course-3-1/it/lab3/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

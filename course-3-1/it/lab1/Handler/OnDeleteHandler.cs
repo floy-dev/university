@@ -4,6 +4,6 @@ public class OnDeleteHandler
 {
     public void Message()
     {
-        Console.WriteLine("Книги удалены");
+        Console.WriteLine("Посетитель удален");
     }
 }

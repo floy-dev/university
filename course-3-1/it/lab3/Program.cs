@@ -9,12 +9,12 @@ public class Program
     static void Main(string[] args)
     {
         Users();
-        Soccers();
+        Hotels();
     }
 
     static void Users()
     {
-        using UserContext db = new UserContext();
+        using DefaultContext db = new DefaultContext();
 
         User user1 = new User { Name = "Tom", Age = 33 };
         User user2 = new User { Name = "Alice", Age = 26 };
@@ -30,82 +30,73 @@ public class Program
         }
     }
 
-    static void Soccers()
+    static void Hotels()
     {
-        using SoccerContext db = new SoccerContext();
+        using DefaultContext db = new DefaultContext();
 
-        Team team1 = new Team { Name = "Барселона" };
-        Team team2 = new Team { Name = "Реал Мадрид" };
+        Room room1 = new Room { Number = "01", Floor = "1", Price = 1000};
+        Room room2 = new Room { Number = "02", Floor = "1", Price = 2500 };
         
         // db.SaveChanges();
         
-        Player pl1 = new Player
+        Visitor visitor1 = new Visitor
         {
-            Name = "Роналду", Age = 31, Position = "Нападающий"
+            Name = "Dmitry", Age = 22, Phone = "7904235231"
         };
-        Player pl2 = new Player
+        Visitor visitor2 = new Visitor
         {
-            Name = "Месси", Age = 28, Position = "Нападающий"
+            Name = "Ivan", Age = 21, Phone = "7905313212"
         };
-        Player pl3 = new Player
+        Visitor visitor3 = new Visitor
         {
-            Name = "Хави", Age = 34, Position = "Полузащитник"
+            Name = "Svetlana", Age = 23, Phone = "79085452342"
         };
-        db.Players.AddRange(new List<Player> { pl1, pl2, pl3 });
+        db.Visitors.AddRange(new List<Visitor> { visitor1, visitor2, visitor3 });
         
-        team1.Players.Add(pl1);
-        team2.Players.Add(pl2);
+        room1.Visitors.Add(visitor1);
+        room2.Visitors.Add(visitor2);
         
-        db.Teams.Add(team1);
-        db.Teams.Add(team2);
+        db.Rooms.Add(room1);
+        db.Rooms.Add(room2);
         
         db.SaveChanges();
 
         Print(db);
         
-        Edit(db, team2, pl3);
+        Edit(db, room2);
         Print(db);
         
         Delete(db);
         Print(db);
     }
 
-    static void Edit(SoccerContext db, Team team, Player player)
+    static void Edit(DefaultContext db, Room room)
     {
-        team.Name = "Реал М.";
-        
-        // player.Team = team;
+        room.Floor = "2";
         
         db.SaveChanges();
     }
     
-    static void Delete(SoccerContext db)
+    static void Delete(DefaultContext db)
     {
-        Player deletePlayer = db.Players.First(p => p.Name == "Роналду");
-        db.Players.Remove(deletePlayer);
+        Visitor deleteVisitor = db.Visitors.First(p => p.Name == "Dmitry");
+        db.Visitors.Remove(deleteVisitor);
         
-        Team deleteTeam = db.Teams.First();
-        db.Teams.Remove(deleteTeam);
+        Room deleteRoom = db.Rooms.First();
+        db.Rooms.Remove(deleteRoom);
         
         db.SaveChanges();
     }
 
-    static void Print(SoccerContext db)
+    static void Print(DefaultContext db)
     {
-        // foreach (Player player in db.Players.Include(p => p.Team).ToList())
-        // {
-            // Console.WriteLine("{0} - {1}", player.Name, player.Team != null ? player.Team.Name : "");
-        // }
-
-        // Console.WriteLine();
-        
-        foreach (Team team in db.Teams.Include(t => t.Players).ToList())
+        foreach (Room room in db.Rooms.Include(t => t.Visitors).ToList())
         {
-            Console.WriteLine("Команда: {0}", team.Name);
+            Console.WriteLine($"Комната: этаж {room.Floor}, номер {room.Number}");
             
-            foreach (Player pl in team.Players)
+            foreach (Visitor visitor in room.Visitors)
             {
-                Console.WriteLine("{0} - {1}", pl.Name, pl.Position);
+                Console.WriteLine($"{visitor.Name} - {visitor.Age}, номер телефона {visitor.Phone}");
             }
 
             Console.WriteLine();
