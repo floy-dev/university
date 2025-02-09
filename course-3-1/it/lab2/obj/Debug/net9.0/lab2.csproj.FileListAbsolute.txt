@@ -1,0 +1,11 @@
+/var/www/university/course-3-1/it/lab2/bin/Debug/net9.0/lab2
+/var/www/university/course-3-1/it/lab2/bin/Debug/net9.0/lab2.dll
+/var/www/university/course-3-1/it/lab2/bin/Debug/net9.0/lab2.pdb
+/var/www/university/course-3-1/it/lab2/obj/Debug/net9.0/lab2.csproj.AssemblyReference.cache
+/var/www/university/course-3-1/it/lab2/obj/Debug/net9.0/lab2.GeneratedMSBuildEditorConfig.editorconfig
+/var/www/university/course-3-1/it/lab2/obj/Debug/net9.0/lab2.AssemblyInfoInputs.cache
+/var/www/university/course-3-1/it/lab2/obj/Debug/net9.0/lab2.AssemblyInfo.cs
+/var/www/university/course-3-1/it/lab2/obj/Debug/net9.0/lab2.csproj.CoreCompileInputs.cache
+/var/www/university/course-3-1/it/lab2/obj/Debug/net9.0/lab2.dll
+/var/www/university/course-3-1/it/lab2/obj/Debug/net9.0/refint/lab2.dll
+/var/www/university/course-3-1/it/lab2/obj/Debug/net9.0/lab2.pdb
