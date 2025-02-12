@@ -3,16 +3,14 @@ project(cw)
 
 set(CMAKE_CXX_STANDARD 23)
 
-set(CMAKE_SYSTEM_NAME Windows)  # Говорим CMake, что собираем под Windows
-set(CMAKE_C_COMPILER x86_64-w64-mingw32-gcc)
-set(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++)
-set(CMAKE_RC_COMPILER x86_64-w64-mingw32-windres)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libgcc -static-libstdc++ -static")
 
 include_directories(${CMAKE_SOURCE_DIR}/library)
+include_directories(./library)
 
-add_executable(cw main.cpp
-        deps/words.cpp
-        deps/words.h
-        deps/utils.h
-        deps/utils.cpp)
+add_executable(cw main.cpp)
+
+add_custom_command(TARGET cw POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_SOURCE_DIR}/library $<TARGET_FILE_DIR:cw>/library
+)

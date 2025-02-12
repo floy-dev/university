@@ -4,13 +4,123 @@
 #include <chrono>
 #include <unistd.h>
 #include <clocale>
+#include <random>
+#include <filesystem>
+#include <fstream>
 
-#include "deps/words.h"
-#include "deps/utils.h"
+#ifdef __linux__
+    #include <termios.h>
+#endif
 
 using namespace std;
 using namespace chrono;
 
+const vector<string> LETTERS_DICTIONARY_EN = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+
+vector<string> shuffle_vector(vector<string> data) {
+
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(data.begin(), data.end(), g);
+
+    return data;
+}
+
+void set_input_mode(const bool enable) {
+    #ifdef __linux__
+        static termios oldt, newt;
+        if (enable) {
+            tcgetattr(STDIN_FILENO, &oldt);
+            newt = oldt;
+            // Выключаем буферизацию и отображение символов
+            newt.c_lflag &= ~(ICANON | ECHO);
+            tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+        } else {
+            tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+        }
+    #endif
+}
+
+void clear_terminal() {
+    #ifdef __linux__
+        std::cout << "\x1B[2J\x1B[H";
+    #endif
+}
+
+vector<string> generate_letters(const int length) {
+    vector<string> result;
+    vector<string> dictionary = shuffle_vector(LETTERS_DICTIONARY_EN);
+
+    result.reserve(length);
+    for (int i = 0; i < length; ++i) {
+        result.push_back(dictionary[i]);
+    }
+
+    return result;
+}
+
+vector<string> generate_words(const int length) {
+    ifstream input_file_stream("library/words.en.dic");
+
+    if (!input_file_stream.is_open()) {
+        throw std::invalid_argument("Словарь с словами не найден");
+    }
+
+    vector<string> words;
+
+    while (!input_file_stream.eof()) {
+        string word;
+        input_file_stream >> word;
+
+        if (!word.empty()) {
+            words.push_back(word);
+        }
+    }
+
+    words = shuffle_vector(words);
+    words.resize(length);
+
+    return words;
+}
+
+vector<string> generate_syllables(const int length) {
+    ifstream input_file_stream("library/syllables.en.dic");
+
+    if (!input_file_stream.is_open()) {
+        throw std::invalid_argument("Словарь с слогами не найден");
+    }
+
+    vector<vector<string>> words_syllables;
+    vector<string> word_syllables;
+
+    while (!input_file_stream.eof()) {
+        string syllable;
+        input_file_stream >> syllable;
+
+        if (syllable != "-") {
+            word_syllables.push_back(syllable);
+        }
+        else {
+            words_syllables.push_back(word_syllables);
+            word_syllables.clear();
+        }
+    }
+
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(words_syllables.begin(), words_syllables.end(), g);
+
+    words_syllables.resize(length);
+
+    vector<string> syllables;
+    for (vector<string>& word_syllables : words_syllables) {
+        for (string& syllable : word_syllables) {
+            syllables.push_back(syllable);
+        }
+    }
+
+    return syllables;
+}
 
 void print_word_with_highlight(const string& word, int pos) {
     // Ставим курсор в начало строки
@@ -18,7 +128,11 @@ void print_word_with_highlight(const string& word, int pos) {
 
     for (int i = 0; i < word.size(); i++) {
         if (i == pos) {
-            cout << "\033[1;31m" << word[i] << "\033[0m";
+            #ifdef _WIN32
+                cout << word[i];
+            #else
+                cout << "\033[1;31m" << word[i] << "\033[0m";
+            #endif
         }
         else {
             cout << word[i];
@@ -45,7 +159,21 @@ vector<string> get_test_data()
     return data;
 }
 
-int get_time_limit_on_symbol(int difficulty) {
+int get_points_for_win(const int difficulty) {
+    if (difficulty == 1) {
+        return 40;
+    }
+    if (difficulty == 2) {
+        return 60;
+    }
+    if (difficulty == 3) {
+        return 80;
+    }
+
+    throw runtime_error("Сложность не найдена");
+}
+
+int get_time_limit_on_symbol(const int difficulty) {
     if (difficulty == 1) {
         return 3;
     }
@@ -59,7 +187,7 @@ int get_time_limit_on_symbol(int difficulty) {
     throw runtime_error("Сложность не найдена");
 }
 
-int get_time_for_test(int difficulty) {
+int get_time_for_test(const int difficulty) {
     if (difficulty == 1) {
         return 40;
     }
@@ -157,7 +285,7 @@ void typing_test(const vector<string>& data, int difficulty) {
         target_index++;
     }
 
-    if (score - decrease_score < 50) {
+    if (score - decrease_score < get_points_for_win(difficulty)) {
         #ifdef _WIN32
             cout << "Test failed" << endl;
             cout << "Number of incorrectly entered characters: " << decrease_score / difficulty << endl;
@@ -192,22 +320,22 @@ int main() {
         cout << "Welcome to the keyboard trainer!" << endl << endl;
 
         cout << "Select difficulty level:" << endl;
-        cout << "1 - Easy (3 seconds per character, points deduction for incorrect input - 1, number of seconds for test - 40, number of points required - 60)" << endl;
-        cout << "2 - Average (2 seconds per character, points deduction for incorrect input - 2, number of seconds for test - 30, number of points required - 80)" << endl;
-        cout << "3 - Complex (1 second per character, points deduction for incorrect input - 3, number of seconds for test - 25, number of points required - 100)" << endl;
+        cout << "1 - Easy (3 seconds per character, points deduction for incorrect input - 1, number of seconds for test - 40, number of points required - 40)" << endl;
+        cout << "2 - Average (2 seconds per character, points deduction for incorrect input - 2, number of seconds for test - 30, number of points required - 60)" << endl;
+        cout << "3 - Complex (1 second per character, points deduction for incorrect input - 3, number of seconds for test - 25, number of points required - 80)" << endl;
     #else
         cout << "Добро пожаловать в клавиатурный тренажер!" << endl << endl;
 
-        cout << "Выберите уровень сложности:\n";
-        cout << "1 - Легкий (3 секунды на один символ, списание очков за ошибочный ввод - 1, количество секунд на тест - 40, количество необходимых очков - 60)" << endl;
-        cout << "2 - Средний (2 секунды на один символ, списание очков за ошибочный ввод - 2, количество секунд на тест - 30, количество необходимых очков - 80)" << endl;
-        cout << "3 - Сложный (1 секунды на один символ, списание очков за ошибочный ввод - 3, количество секунд на тест - 25, количество необходимых очков - 100)" << endl;
+        cout << "Выберите уровень сложности:" << endl;
+        cout << "1 - Легкий (3 секунды на один символ, списание очков за ошибочный ввод - 1, количество секунд на тест - 40, количество необходимых очков - 40)" << endl;
+        cout << "2 - Средний (2 секунды на один символ, списание очков за ошибочный ввод - 2, количество секунд на тест - 30, количество необходимых очков - 60)" << endl;
+        cout << "3 - Сложный (1 секунды на один символ, списание очков за ошибочный ввод - 3, количество секунд на тест - 25, количество необходимых очков - 80)" << endl;
     #endif
 
     int difficulty = 1;
     cin >> difficulty;
 
-    if (difficulty < 1 || difficulty > 3) {
+    if (difficulty != 1 || difficulty != 2 || difficulty != 3) {
         difficulty = 3;
     }
 
@@ -217,6 +345,10 @@ int main() {
     typing_test(get_test_data(), difficulty);
     set_input_mode(false);
 
+    #ifdef _WIN32
+        getchar();
+        system("pause");
+    #endif
+
     return 0;
 }
-

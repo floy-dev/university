@@ -52,23 +52,9 @@ build cmake_object_order_depends_target_cw: phony || .
 build CMakeFiles/cw.dir/main.cpp.o: CXX_COMPILER__cw_unscanned_Debug /home/floy/www/university/course-3-1/c++/cw/main.cpp || cmake_object_order_depends_target_cw
   DEP_FILE = CMakeFiles/cw.dir/main.cpp.o.d
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++2a -fdiagnostics-color=always
-  INCLUDES = -I/home/floy/www/university/course-3-1/c++/cw/library
+  INCLUDES = -I/home/floy/www/university/course-3-1/c++/cw/library -I/home/floy/www/university/course-3-1/c++/cw/./library
   OBJECT_DIR = CMakeFiles/cw.dir
   OBJECT_FILE_DIR = CMakeFiles/cw.dir
-
-build CMakeFiles/cw.dir/deps/words.cpp.o: CXX_COMPILER__cw_unscanned_Debug /home/floy/www/university/course-3-1/c++/cw/deps/words.cpp || cmake_object_order_depends_target_cw
-  DEP_FILE = CMakeFiles/cw.dir/deps/words.cpp.o.d
-  FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++2a -fdiagnostics-color=always
-  INCLUDES = -I/home/floy/www/university/course-3-1/c++/cw/library
-  OBJECT_DIR = CMakeFiles/cw.dir
-  OBJECT_FILE_DIR = CMakeFiles/cw.dir/deps
-
-build CMakeFiles/cw.dir/deps/utils.cpp.o: CXX_COMPILER__cw_unscanned_Debug /home/floy/www/university/course-3-1/c++/cw/deps/utils.cpp || cmake_object_order_depends_target_cw
-  DEP_FILE = CMakeFiles/cw.dir/deps/utils.cpp.o.d
-  FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++2a -fdiagnostics-color=always
-  INCLUDES = -I/home/floy/www/university/course-3-1/c++/cw/library
-  OBJECT_DIR = CMakeFiles/cw.dir
-  OBJECT_FILE_DIR = CMakeFiles/cw.dir/deps
 
 
 # =============================================================================
@@ -78,10 +64,10 @@ build CMakeFiles/cw.dir/deps/utils.cpp.o: CXX_COMPILER__cw_unscanned_Debug /home
 #############################################
 # Link the executable cw
 
-build cw: CXX_EXECUTABLE_LINKER__cw_Debug CMakeFiles/cw.dir/main.cpp.o CMakeFiles/cw.dir/deps/words.cpp.o CMakeFiles/cw.dir/deps/utils.cpp.o
+build cw: CXX_EXECUTABLE_LINKER__cw_Debug CMakeFiles/cw.dir/main.cpp.o
   FLAGS = -static-libgcc -static-libstdc++ -static -g
   OBJECT_DIR = CMakeFiles/cw.dir
-  POST_BUILD = :
+  POST_BUILD = cd /home/floy/www/university/course-3-1/c++/cw/cmake-build-debug-win && /snap/clion/314/bin/cmake/linux/x64/bin/cmake -E copy_directory /home/floy/www/university/course-3-1/c++/cw/library /home/floy/www/university/course-3-1/c++/cw/cmake-build-debug-win/library
   PRE_LINK = :
   TARGET_FILE = cw
   TARGET_PDB = cw.dbg
