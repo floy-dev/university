@@ -1,0 +1,3 @@
+/home/floy/www/university/course-3-1/c++/cw/cmake-build-debug-linux/CMakeFiles/cw.dir
+/home/floy/www/university/course-3-1/c++/cw/cmake-build-debug-linux/CMakeFiles/edit_cache.dir
+/home/floy/www/university/course-3-1/c++/cw/cmake-build-debug-linux/CMakeFiles/rebuild_cache.dir

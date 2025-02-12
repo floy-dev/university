@@ -1,8 +1,8 @@
-/home/floy/www/university/c++/cmake-build-debug/CMakeFiles/main.dir
-/home/floy/www/university/c++/cmake-build-debug/CMakeFiles/fio.dir
-/home/floy/www/university/c++/cmake-build-debug/CMakeFiles/lab2-for.dir
-/home/floy/www/university/c++/cmake-build-debug/CMakeFiles/lab2-while.dir
-/home/floy/www/university/c++/cmake-build-debug/CMakeFiles/lab3.dir
-/home/floy/www/university/c++/cmake-build-debug/CMakeFiles/lab4.dir
-/home/floy/www/university/c++/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/floy/www/university/c++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/floy/www/university/course-2-1/c++/cmake-build-debug/CMakeFiles/main.dir
+/home/floy/www/university/course-2-1/c++/cmake-build-debug/CMakeFiles/fio.dir
+/home/floy/www/university/course-2-1/c++/cmake-build-debug/CMakeFiles/lab2-for.dir
+/home/floy/www/university/course-2-1/c++/cmake-build-debug/CMakeFiles/lab2-while.dir
+/home/floy/www/university/course-2-1/c++/cmake-build-debug/CMakeFiles/lab3.dir
+/home/floy/www/university/course-2-1/c++/cmake-build-debug/CMakeFiles/lab4.dir
+/home/floy/www/university/course-2-1/c++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/floy/www/university/course-2-1/c++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
