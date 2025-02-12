@@ -94,12 +94,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/floy/www/university/c++/cmake-build-debug",
-		"source" : "/home/floy/www/university/c++"
+		"build" : "/home/floy/www/university/course-2-1/c++/cmake-build-debug",
+		"source" : "/home/floy/www/university/course-2-1/c++"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }
