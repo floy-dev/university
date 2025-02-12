@@ -3,7 +3,7 @@
 #include <iostream>
 #include <random>
 
-#include <termios.h>
+// #include <termios.h>
 #include <unistd.h>
 
 #include "utils.h"
@@ -20,16 +20,16 @@ vector<string> shuffle_vector(vector<string> data) {
 }
 
 void set_input_mode(bool enable) {
-    static termios oldt, newt;
-    if (enable) {
-        tcgetattr(STDIN_FILENO, &oldt);
-        newt = oldt;
-        // Выключаем буферизацию и отображение символов
-        newt.c_lflag &= ~(ICANON | ECHO);
-        tcsetattr(STDIN_FILENO, TCSANOW, &newt);
-    } else {
-        tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
-    }
+    // static termios oldt, newt;
+    // if (enable) {
+    //     tcgetattr(STDIN_FILENO, &oldt);
+    //     newt = oldt;
+    //     // Выключаем буферизацию и отображение символов
+    //     newt.c_lflag &= ~(ICANON | ECHO);
+    //     tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+    // } else {
+    //     tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+    // }
 }
 
 void clear_terminal() {

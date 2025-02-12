@@ -2,8 +2,8 @@
 #include <vector>
 #include <string>
 #include <chrono>
-#include <termios.h>
 #include <unistd.h>
+#include <clocale>
 
 #include "deps/words.h"
 #include "deps/utils.h"
@@ -89,11 +89,19 @@ void print_time_left(auto start_time, int limit_for_test) {
     int seconds_left = limit_for_test - duration_cast<seconds>(steady_clock::now() - start_time).count();
 
     if (seconds_left > 0) {
-        cout << "Осталось секунд:" << endl;
+        #ifdef _WIN32
+            cout << "Time left:" << endl;
+        #else
+            cout << "Осталось секунд:" << endl;
+        #endif
         cout << seconds_left << endl;
     }
     else {
-        cout << "Время окончено" << endl;
+        #ifdef _WIN32
+            cout << "Time end" << endl;
+        #else
+            cout << "Время окончено" << endl;
+        #endif
     }
 }
 
@@ -150,32 +158,57 @@ void typing_test(const vector<string>& data, int difficulty) {
     }
 
     if (score - decrease_score < 50) {
-        cout << "Тест провален" << endl;
-        cout << "Количество неверно введенных символов: " << decrease_score / difficulty << endl;
+        #ifdef _WIN32
+            cout << "Test failed" << endl;
+            cout << "Number of incorrectly entered characters: " << decrease_score / difficulty << endl;
+        #else
+            cout << "Тест провален" << endl;
+            cout << "Количество неверно введенных символов: " << decrease_score / difficulty << endl;
+        #endif
     }
     else {
-        cout << "Тест пройден" << endl;
+        #ifdef _WIN32
+            cout << "Test pass" << endl;
+        #else
+            cout << "Тест пройден" << endl;
+        #endif
     }
 
-    cout << "Ваш счёт: " << score - decrease_score << endl;
+    #ifdef _WIN32
+        cout << "Your score: " << score - decrease_score << endl;
+    #else
+        cout << "Ваш счёт: " << score - decrease_score << endl;
+    #endif
 }
 
 int main() {
+
+    setlocale(LC_ALL, "Russian");
+    setlocale(LC_CTYPE, "Russian");
+
     clear_terminal();
 
-    cout << "Добро пожаловать в клавиатурный тренажер!\n\n";
+    #ifdef _WIN32
+        cout << "Welcome to the keyboard trainer!" << endl << endl;
 
-    cout << "Выберите уровень сложности:\n";
-    cout << "1 - Легкий (3 секунды на один символ, списание очков за ошибочный ввод - 1, количество секунд на тест - 40, количество необходимых очков - 60)\n";
-    cout << "2 - Средний (2 секунды на один символ, списание очков за ошибочный ввод - 2, количество секунд на тест - 30, количество необходимых очков - 80)\n";
-    cout << "3 - Сложный (1 секунды на один символ, списание очков за ошибочный ввод - 3, количество секунд на тест - 25, количество необходимых очков - 100)\n";
+        cout << "Select difficulty level:" << endl;
+        cout << "1 - Easy (3 seconds per character, points deduction for incorrect input - 1, number of seconds for test - 40, number of points required - 60)" << endl;
+        cout << "2 - Average (2 seconds per character, points deduction for incorrect input - 2, number of seconds for test - 30, number of points required - 80)" << endl;
+        cout << "3 - Complex (1 second per character, points deduction for incorrect input - 3, number of seconds for test - 25, number of points required - 100)" << endl;
+    #else
+        cout << "Добро пожаловать в клавиатурный тренажер!" << endl << endl;
+
+        cout << "Выберите уровень сложности:\n";
+        cout << "1 - Легкий (3 секунды на один символ, списание очков за ошибочный ввод - 1, количество секунд на тест - 40, количество необходимых очков - 60)" << endl;
+        cout << "2 - Средний (2 секунды на один символ, списание очков за ошибочный ввод - 2, количество секунд на тест - 30, количество необходимых очков - 80)" << endl;
+        cout << "3 - Сложный (1 секунды на один символ, списание очков за ошибочный ввод - 3, количество секунд на тест - 25, количество необходимых очков - 100)" << endl;
+    #endif
 
     int difficulty = 1;
     cin >> difficulty;
 
     if (difficulty < 1 || difficulty > 3) {
-        cout << "Неверный ввод\n";
-        return 1;
+        difficulty = 3;
     }
 
     clear_terminal();
