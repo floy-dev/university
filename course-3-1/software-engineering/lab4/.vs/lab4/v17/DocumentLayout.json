@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|c:\\users\\user\\desktop\\university\\course-3-1\\software-engineering\\lab4\\timeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|solutionrelative:timeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\timeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|solutionrelative:timeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|c:\\users\\user\\desktop\\university\\course-3-1\\software-engineering\\lab4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|c:\\users\\user\\desktop\\university\\course-3-1\\software-engineering\\lab4\\displaytimeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|solutionrelative:displaytimeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\displaytimeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|solutionrelative:displaytimeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|c:\\users\\user\\desktop\\university\\course-3-1\\software-engineering\\lab4\\utils\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7EF1DB5-719A-4D32-9789-B78B9F37E5FC}|lab4.csproj|solutionrelative:utils\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DisplayTimeForm.cs",
+              "DocumentMoniker": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\DisplayTimeForm.cs",
+              "RelativeDocumentMoniker": "DisplayTimeForm.cs",
+              "ToolTip": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\DisplayTimeForm.cs",
+              "RelativeToolTip": "DisplayTimeForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:41:30.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DisplayTimeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\DisplayTimeForm.cs",
+              "RelativeDocumentMoniker": "DisplayTimeForm.cs",
+              "ToolTip": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\DisplayTimeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "DisplayTimeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:39:39.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TimeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\TimeForm.cs",
+              "RelativeDocumentMoniker": "TimeForm.cs",
+              "ToolTip": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\TimeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "TimeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:19:56.356Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TimeForm.cs",
+              "DocumentMoniker": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\TimeForm.cs",
+              "RelativeDocumentMoniker": "TimeForm.cs",
+              "ToolTip": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\TimeForm.cs",
+              "RelativeToolTip": "TimeForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:10:20.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Time.cs",
+              "DocumentMoniker": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\Utils\\Time.cs",
+              "RelativeDocumentMoniker": "Utils\\Time.cs",
+              "ToolTip": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\Utils\\Time.cs",
+              "RelativeToolTip": "Utils\\Time.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:00:26.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T12:25:45.578Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab4\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:47:39.269Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

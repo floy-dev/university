@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/var/www/university/course-3-1/software-engineering/lab2/lab2.csproj": {}
+    "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab2\\lab2.csproj": {}
   },
   "projects": {
-    "/var/www/university/course-3-1/software-engineering/lab2/lab2.csproj": {
+    "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab2\\lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/var/www/university/course-3-1/software-engineering/lab2/lab2.csproj",
+        "projectUniqueName": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab2\\lab2.csproj",
         "projectName": "lab2",
-        "projectPath": "/var/www/university/course-3-1/software-engineering/lab2/lab2.csproj",
-        "packagesPath": "/home/floy/.nuget/packages/",
-        "outputPath": "/home/floy/www/university/course-3-1/software-engineering/lab2/obj/",
+        "projectPath": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab2\\lab2.csproj",
+        "packagesPath": "C:\\Users\\USer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\software-engineering\\lab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/floy/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\USer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
