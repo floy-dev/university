@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>lab2</name>
+    </assembly>
+    <members>
+        <member name="T:lab2.Time">
+            <summary>
+            Класс, представляющий время в формате "часы:минуты:секунды"
+            </summary>
+            <see href="https://classroom.google.com/c/MjI3Nzg0NDI3NzA3/a/NDkzNjU0NjI0NDI1/details">Лабораторная</see>
+        </member>
+        <member name="P:lab2.Time.Hours">
+            <summary>
+            Получает или задает количество часов
+            </summary>
+            <example>17</example>
+            <value>
+            Значение от 0 до 23
+            </value>
+            <exception cref="T:System.ArgumentException">Если значение больше 23</exception>
+        </member>
+        <member name="P:lab2.Time.Minutes">
+            <summary>
+            Получает или задает количество минут
+            </summary>
+            <example>13</example>
+            <value>
+            Значение от 0 до 59
+            </value>
+            <exception cref="T:System.ArgumentException">Если значение больше 59</exception>
+        </member>
+        <member name="P:lab2.Time.Seconds">
+            <summary>
+            Получает или задает количество секунд
+            </summary>
+            <value>
+            <example>50</example>
+            Значение от 0 до 59
+            </value>
+            <exception cref="T:System.ArgumentException">Если значение больше 59</exception>
+        </member>
+        <member name="M:lab2.Time.#ctor(System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            Новый экземпляр класса Time
+            </summary>
+            <param name="hours">Часы (0-23)</param>
+            <param name="minutes">Минуты (0-59)</param>
+            <param name="seconds">Секунды (0-59)</param>
+        </member>
+        <member name="M:lab2.Time.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+            Новый экземпляр класса Time
+            </summary>
+            <param name="hours">Часы (0-23)</param>
+            <param name="minutes">Минуты (0-59)</param>
+        </member>
+        <member name="M:lab2.Time.#ctor(System.UInt32)">
+            <summary>
+            Новый экземпляр класса Time
+            </summary>
+            <param name="hours">Часы (0-23)</param>
+        </member>
+        <member name="M:lab2.Time.Display">
+            <summary>
+            Выводит время в формате "часы:минуты:секунды" в терминал
+            </summary>
+            <remarks>
+            <para>Метод использует перегрузку ToString()</para>
+            </remarks>
+        </member>
+        <member name="M:lab2.Time.ToSeconds">
+            <summary>
+            Преобразует время в количество секунд
+            </summary>
+            <returns>Количество секунд, равное времени в объекте</returns>
+        </member>
+        <member name="M:lab2.Time.ToMinutes">
+            <summary>
+            Преобразует время в количество минут
+            </summary>
+            <returns>Количество минут, равное времени в объекте</returns>
+        </member>
+        <member name="M:lab2.Time.DifferenceInSeconds(lab2.Time,lab2.Time)">
+            <summary>
+            Находит разницу между двумя экзеплярами времени в секундах
+            </summary>
+            <param name="t1">Первое время</param>
+            <param name="t2">Второе время</param>
+            <returns>Разница в секундах</returns>
+        </member>
+        <member name="M:lab2.Time.op_Addition(lab2.Time,System.Int32)">
+            <summary>
+            Оператор сложения
+            </summary>
+            <param name="t">Время</param>
+            <param name="seconds">Количество секунд, на которое увеличивается время</param>
+            <returns>Новое время</returns>
+        </member>
+        <member name="M:lab2.Time.op_Subtraction(lab2.Time,System.Int32)">
+            <summary>
+            Оператор вычитания
+            </summary>
+            <param name="t">Время</param>
+            <param name="seconds">Количество секунд, на которое уменьшается время</param>
+            <returns>Новое время</returns>
+        </member>
+        <member name="M:lab2.Time.op_Increment(lab2.Time)">
+            <summary>
+            Оператор инкремента
+            </summary>
+            <param name="t1">Время</param>
+            <returns>Новое время, увеличенное на 1 секунду</returns>
+        </member>
+        <member name="M:lab2.Time.op_Decrement(lab2.Time)">
+            <summary>
+            Оператор декремента
+            </summary>
+            <param name="t1">Время</param>
+            <returns>Новое время, уменьшенное на 1 секунду</returns>
+        </member>
+        <member name="M:lab2.Time.op_GreaterThan(lab2.Time,lab2.Time)">
+            <summary>
+            Оператор больше
+            </summary>
+            <param name="t1">Первое время</param>
+            <param name="t2">Второе время</param>
+            <returns>Логическое значение</returns>
+        </member>
+        <member name="M:lab2.Time.op_LessThan(lab2.Time,lab2.Time)">
+            <summary>
+            Оператор меньше
+            </summary>
+            <param name="t1">Первое время</param>
+            <param name="t2">Второе время</param>
+            <returns>Логическое значение</returns>
+        </member>
+        <member name="M:lab2.Time.op_GreaterThanOrEqual(lab2.Time,lab2.Time)">
+            <summary>
+            Оператор больше или равно
+            </summary>
+            <param name="t1">Первое время</param>
+            <param name="t2">Второе время</param>
+            <returns>Логическое значение</returns>
+        </member>
+        <member name="M:lab2.Time.op_LessThanOrEqual(lab2.Time,lab2.Time)">
+            <summary>
+            Оператор меньше или равно
+            </summary>
+            <param name="t1">Первое время</param>
+            <param name="t2">Второе время</param>
+            <returns>Логическое значение</returns>
+        </member>
+        <member name="M:lab2.Time.op_True(lab2.Time)">
+            <summary>
+            Оператор true
+            </summary>
+            <param name="t">Время для проверки</param>
+            <returns>Логическое значение</returns>
+        </member>
+        <member name="M:lab2.Time.op_False(lab2.Time)">
+            <summary>
+            Оператор false
+            </summary>
+            <param name="t">Время для проверки</param>
+            <returns>Логическое значение</returns>
+        </member>
+        <member name="M:lab2.Time.ToString">
+            <summary>
+            Преобразует Time в строку
+            </summary>
+            <returns>Строка в формате "часы:минуты:секунды"</returns>
+        </member>
+        <member name="M:lab2.Time.FromSeconds(System.UInt32)">
+            <summary>
+            Преобразует количество секунд в объект Time
+            </summary>
+            <param name="totalSeconds">Количество секунд</param>
+            <c>var Time time = Time.FromSeconds(1000)</c>
+            <returns>Объект Time</returns>
+        </member>
+    </members>
+</doc>

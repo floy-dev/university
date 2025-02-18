@@ -1,0 +1,17 @@
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\bin\Debug\net9.0-windows\lab5.exe
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\bin\Debug\net9.0-windows\lab5.deps.json
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\bin\Debug\net9.0-windows\lab5.runtimeconfig.json
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\bin\Debug\net9.0-windows\lab5.dll
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\bin\Debug\net9.0-windows\lab5.pdb
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.Form1.resources
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.csproj.GenerateResource.cache
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.AssemblyInfoInputs.cache
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.AssemblyInfo.cs
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.csproj.CoreCompileInputs.cache
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.sourcelink.json
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.dll
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\refint\lab5.dll
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.pdb
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\lab5.genruntimeconfig.cache
+C:\Users\USer\Desktop\university\course-3-1\software-engineering\lab5\obj\Debug\net9.0-windows\ref\lab5.dll
