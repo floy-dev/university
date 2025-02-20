@@ -335,10 +335,6 @@ int main() {
     int difficulty = 1;
     cin >> difficulty;
 
-    if (difficulty != 1 || difficulty != 2 || difficulty != 3) {
-        difficulty = 3;
-    }
-
     clear_terminal();
 
     set_input_mode(true);
