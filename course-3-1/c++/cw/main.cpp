@@ -189,7 +189,7 @@ int get_time_limit_on_symbol(const int difficulty) {
 
 int get_time_for_test(const int difficulty) {
     if (difficulty == 1) {
-        return 40;
+        return 5;
     }
     if (difficulty == 2) {
         return 30;
@@ -285,6 +285,9 @@ void typing_test(const vector<string>& data, int difficulty) {
         target_index++;
     }
 
+    cout << endl;
+    clear_terminal();
+
     if (score - decrease_score < get_points_for_win(difficulty)) {
         #ifdef _WIN32
             cout << "Test failed" << endl;
@@ -302,9 +305,16 @@ void typing_test(const vector<string>& data, int difficulty) {
         #endif
     }
 
+    float actual_score = static_cast<float>(score - decrease_score);
+    if (actual_score < 0) {
+        actual_score = 0.0;
+    }
+
     #ifdef _WIN32
         cout << "Your score: " << score - decrease_score << endl;
+        cout << "Correct type speed: " actual_score / static_cast<float>(limit_for_test) * 60.0 << " characters per minute" << endl;
     #else
+        cout << "Скорость корректной печати: " << actual_score / static_cast<float>(limit_for_test) * 60.0 << " символов в минуту" << endl;
         cout << "Ваш счёт: " << score - decrease_score << endl;
     #endif
 }
