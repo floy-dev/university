@@ -1,0 +1,15 @@
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\bin\Debug\net9.0\lab2.exe
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\bin\Debug\net9.0\lab2.deps.json
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\bin\Debug\net9.0\lab2.runtimeconfig.json
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\bin\Debug\net9.0\lab2.dll
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\bin\Debug\net9.0\lab2.pdb
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\lab2.AssemblyInfoInputs.cache
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\lab2.AssemblyInfo.cs
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\lab2.csproj.CoreCompileInputs.cache
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\lab2.sourcelink.json
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\lab2.dll
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\refint\lab2.dll
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\lab2.pdb
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\lab2.genruntimeconfig.cache
+C:\Users\USer\Desktop\university\course-3-1\equipment\lab2\obj\Debug\net9.0\ref\lab2.dll

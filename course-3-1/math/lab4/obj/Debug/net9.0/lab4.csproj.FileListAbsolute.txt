@@ -1,0 +1,15 @@
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\bin\Debug\net9.0\lab4.exe
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\bin\Debug\net9.0\lab4.deps.json
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\bin\Debug\net9.0\lab4.runtimeconfig.json
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\bin\Debug\net9.0\lab4.dll
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\bin\Debug\net9.0\lab4.pdb
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\lab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\lab4.AssemblyInfoInputs.cache
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\lab4.AssemblyInfo.cs
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\lab4.csproj.CoreCompileInputs.cache
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\lab4.sourcelink.json
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\lab4.dll
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\refint\lab4.dll
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\lab4.pdb
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\lab4.genruntimeconfig.cache
+C:\Users\USer\Desktop\university\course-3-1\math\lab4\obj\Debug\net9.0\ref\lab4.dll
