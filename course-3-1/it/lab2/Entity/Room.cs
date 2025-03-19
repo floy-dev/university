@@ -7,6 +7,8 @@ public class Room
     public string Floor { get; set; }
     public float Price { get; set; }
     
+    public string Type { get; set; }
+    
     public ICollection<Visitor> Visitors { get; set; }
     
     public Room()

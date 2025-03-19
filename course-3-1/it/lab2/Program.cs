@@ -8,17 +8,17 @@ public class Program
     {
         using DefaultContext db = new DefaultContext();
 
-        // Init(db);
-
-        FindByName(db, "Dmitry");
+        FindByName(db, "Dmitry Anatolievich");
         
-        RemoveByName(db, "Dmitry");
+        RemoveByName(db, "Dmitry Anatolievich");
+        
+        RemoveByName(db, "Dmitry Anatolievich");
     }
 
     static void FindByName(DefaultContext db, string name)
     {
         Visitor? visitor = db.Visitors
-            .FirstOrDefault(b => b.Name == "Dmitry");
+            .FirstOrDefault(b => b.Name == name);
 
         Console.WriteLine(visitor is not null ? $"{visitor.Id}: {visitor.Name}" : "Пользователь не найден");
     }
@@ -26,7 +26,7 @@ public class Program
     static void RemoveByName(DefaultContext db, string name)
     {
         Visitor? visitor = db.Visitors
-            .FirstOrDefault(b => b.Name == "Dmitry");
+            .FirstOrDefault(b => b.Name == name);
 
         if (visitor == null)
         {
@@ -37,24 +37,6 @@ public class Program
         
         Console.WriteLine($"Пользователь {visitor.Id}: {visitor.Name} удален");
         db.Visitors.Remove(visitor);
-        
-        db.SaveChanges();
-    }
-    
-    static void Init(DefaultContext db)
-    {
-        Room room1 = new Room { Number = "1", Floor = "1", Price = 1000};
-        Room room2 = new Room { Number = "2", Floor = "2", Price = 2000};
-        
-        db.Rooms.AddRange(room1, room2);
-        
-        Visitor visitor1 = new Visitor { Name = "Dmitry", Phone = "123456" };
-        Visitor visitor2 = new Visitor { Name = "Ivan", Phone = "123456"};
-
-        db.Visitors.AddRange(visitor1, visitor2);
-        
-        room1.Visitors.Add(visitor1);
-        room2.Visitors.Add(visitor2);
         
         db.SaveChanges();
     }
