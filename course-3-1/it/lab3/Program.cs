@@ -36,34 +36,52 @@ public class Program
 
         Room room1 = new Room { Number = "01", Floor = "1", Price = 1000};
         Room room2 = new Room { Number = "02", Floor = "1", Price = 2500 };
-        
-        // db.SaveChanges();
+        Room room3 = new Room { Number = "03", Floor = "1", Price = 2500 };
+        Room room4 = new Room { Number = "11", Floor = "2", Price = 3500 };
+        Room room5 = new Room { Number = "12", Floor = "2", Price = 4500 };
         
         Visitor visitor1 = new Visitor
         {
-            Name = "Dmitry", Age = 22, Phone = "7904235231"
+            Name = "Dmitry Anatolievich", Age = 22, Phone = "7904235231"
         };
         Visitor visitor2 = new Visitor
         {
-            Name = "Ivan", Age = 21, Phone = "7905313212"
+            Name = "Ivan Akulbdyanov", Age = 21, Phone = "7905313212"
         };
         Visitor visitor3 = new Visitor
         {
-            Name = "Svetlana", Age = 23, Phone = "79085452342"
+            Name = "Svetlana Poymenova", Age = 23, Phone = "7512452342"
         };
-        db.Visitors.AddRange(new List<Visitor> { visitor1, visitor2, visitor3 });
+        Visitor visitor4 = new Visitor
+        {
+            Name = "Alexandra Talachixova", Age = 23, Phone = "725852512342"
+        };
+        Visitor visitor5 = new Visitor
+        {
+            Name = "Prosto Pavel", Age = 24, Phone = "77454512542"
+        };
         
-        room1.Visitors.Add(visitor1);
-        room2.Visitors.Add(visitor2);
+        // db.Visitors.AddRange(new List<Visitor> { visitor1, visitor2, visitor3, visitor4, visitor5 });
+        //
+        // room1.Visitors.Add(visitor1);
+        // room2.Visitors.Add(visitor2);
+        // room2.Visitors.Add(visitor3);
+        // room3.Visitors.Add(visitor4);
+        // room5.Visitors.Add(visitor5);
+        //
+        // db.Rooms.Add(room1);
+        // db.Rooms.Add(room2);
+        // db.Rooms.Add(room3);
+        // db.Rooms.Add(room4);
+        // db.Rooms.Add(room5);
         
-        db.Rooms.Add(room1);
-        db.Rooms.Add(room2);
-        
-        db.SaveChanges();
+        // db.SaveChanges();
 
-        Print(db);
+        // Print(db);
         
-        Edit(db, room2);
+        Room editRoom = db.Rooms.First(p => p.Number == "01");
+        
+        Edit(db, editRoom);
         Print(db);
         
         Delete(db);
@@ -72,17 +90,17 @@ public class Program
 
     static void Edit(DefaultContext db, Room room)
     {
-        room.Floor = "2";
+        room.Floor = "8";
         
         db.SaveChanges();
     }
     
     static void Delete(DefaultContext db)
     {
-        Visitor deleteVisitor = db.Visitors.First(p => p.Name == "Dmitry");
+        Visitor deleteVisitor = db.Visitors.First(p => p.Name == "Dmitry Anatolievich");
         db.Visitors.Remove(deleteVisitor);
         
-        Room deleteRoom = db.Rooms.First();
+        Room deleteRoom = db.Rooms.First(p => p.Number == "02");
         db.Rooms.Remove(deleteRoom);
         
         db.SaveChanges();
