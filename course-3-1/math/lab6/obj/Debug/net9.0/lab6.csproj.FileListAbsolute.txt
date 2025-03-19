@@ -1,0 +1,15 @@
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\bin\Debug\net9.0\lab6.exe
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\bin\Debug\net9.0\lab6.deps.json
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\bin\Debug\net9.0\lab6.runtimeconfig.json
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\bin\Debug\net9.0\lab6.dll
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\bin\Debug\net9.0\lab6.pdb
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\lab6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\lab6.AssemblyInfoInputs.cache
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\lab6.AssemblyInfo.cs
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\lab6.csproj.CoreCompileInputs.cache
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\lab6.sourcelink.json
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\lab6.dll
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\refint\lab6.dll
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\lab6.pdb
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\lab6.genruntimeconfig.cache
+C:\Users\USer\Desktop\university\course-3-1\math\lab6\obj\Debug\net9.0\ref\lab6.dll
