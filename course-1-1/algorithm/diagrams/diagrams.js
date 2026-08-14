@@ -1,1 +1,0 @@
-node_modules/diagrams/bin/diagrams.js
