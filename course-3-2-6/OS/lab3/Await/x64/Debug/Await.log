@@ -1,0 +1,4 @@
+﻿  Await.cpp
+C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab3\Await\Await.cpp(41,13): warning C4312: 'reinterpret_cast': conversion from 'unsigned long' to 'HANDLE' of greater size
+C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab3\Await\Await.cpp(50,13): warning C4312: 'reinterpret_cast': conversion from 'unsigned long' to 'HANDLE' of greater size
+  Await.vcxproj -> C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab3\x64\Debug\Await.exe

@@ -1,0 +1,17 @@
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\bin\Debug\net10.0-windows\Checkers.exe
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\bin\Debug\net10.0-windows\Checkers.deps.json
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\bin\Debug\net10.0-windows\Checkers.runtimeconfig.json
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\bin\Debug\net10.0-windows\Checkers.dll
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\bin\Debug\net10.0-windows\Checkers.pdb
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.AssemblyInfoInputs.cache
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.AssemblyInfo.cs
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.csproj.CoreCompileInputs.cache
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.sourcelink.json
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.dll
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\refint\Checkers.dll
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.pdb
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.genruntimeconfig.cache
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\ref\Checkers.dll
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.Form1.resources
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Икс\Курсовая работа\obj\Debug\net10.0-windows\Checkers.csproj.GenerateResource.cache

@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ConsoleApp/ConsoleApp.vcxproj" Id="ea70f9aa-dedf-445e-97ae-53a79043ac72" />
+  <Project Path="DeferredDll/DeferredDll.vcxproj" Id="9c7a92d8-7628-49a7-9b2c-0b417925483a" />
+  <Project Path="ImplicitDll/ImplicitDll.vcxproj" Id="1d179eaf-8867-467e-8d47-fd2cce0725eb" />
+  <Project Path="ObviousDll/ObviousDll.vcxproj" Id="2821bdd1-87f7-4658-a660-57756a78a595" />
+  <Project Path="StaticLib/StaticLib.vcxproj" Id="80e4277c-9122-444c-b53d-2f39ebeb54de" />
+</Solution>

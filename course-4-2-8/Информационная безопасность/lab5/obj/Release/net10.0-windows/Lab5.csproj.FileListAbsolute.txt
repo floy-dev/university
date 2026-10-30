@@ -1,0 +1,15 @@
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\bin\Release\net10.0-windows\Lab5.exe
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\bin\Release\net10.0-windows\Lab5.deps.json
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\bin\Release\net10.0-windows\Lab5.runtimeconfig.json
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\bin\Release\net10.0-windows\Lab5.dll
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\bin\Release\net10.0-windows\Lab5.pdb
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\Lab5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\Lab5.AssemblyInfoInputs.cache
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\Lab5.AssemblyInfo.cs
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\Lab5.csproj.CoreCompileInputs.cache
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\Lab5.sourcelink.json
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\Lab5.dll
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\refint\Lab5.dll
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\Lab5.pdb
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\Lab5.genruntimeconfig.cache
+C:\Users\acced\OneDrive\Desktop\university\course-4-2-8\Информационная безопасность ИИ\lab5\obj\Release\net10.0-windows\ref\Lab5.dll

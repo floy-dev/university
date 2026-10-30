@@ -1,0 +1,1433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+<link href="lessons.php_files/css2.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://ruseller.com/favicon.ico">
+<link rel="icon" type="image/gif" 
+href="http://ruseller.com/animated_favicon1.gif">
+<script type="text/javascript" src="lessons.php_files/jquery.js"></script>
+<script type="text/javascript">
+var ie=document.all
+var dom=document.getElementById
+var ns4=document.layers
+var calunits=document.layers? "" : "px"
+
+var bouncelimit=32 //(must be divisible by 8)
+var direction="up"
+
+function initbox(){
+if (!dom&&!ie&&!ns4)
+return
+crossobj=(dom)?document.getElementById("dropin").style : ie? document.all.dropin : document.dropin
+scroll_top=(ie)? truebody().scrollTop : window.pageYOffset
+crossobj.top=scroll_top-250+calunits
+crossobj.visibility=(dom||ie)? "visible" : "show"
+dropstart=setInterval("dropin()",50)
+}
+
+function dropin(){
+scroll_top=(ie)? truebody().scrollTop : window.pageYOffset
+if (parseInt(crossobj.top)<100+scroll_top)
+crossobj.top=parseInt(crossobj.top)+40+calunits
+else{
+clearInterval(dropstart)
+bouncestart=setInterval("bouncein()",50)
+}
+}
+
+function bouncein(){
+crossobj.top=parseInt(crossobj.top)-bouncelimit+calunits
+if (bouncelimit<0)
+bouncelimit+=8
+bouncelimit=bouncelimit*-1
+if (bouncelimit==0){
+clearInterval(bouncestart)
+}
+}
+
+function dismissbox(){
+if (window.bouncestart) clearInterval(bouncestart)
+crossobj.visibility="hidden"
+}
+
+function truebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+
+function get_cookie(Name) {
+var search = Name + "="
+var returnvalue = ""
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) {
+offset += search.length
+end = document.cookie.indexOf(";", offset)
+if (end == -1)
+end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function dropornot(){
+if (get_cookie("droppedin")==""){
+window.onload=initbox
+document.cookie="droppedin=yes"
+}
+}
+dropornot()
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; 
+charset=windows-1251">
+<script type="text/javascript" src="lessons.php_files/comm.js"></script>
+<script type="text/javascript" src="lessons.php_files/rec.js"></script>
+<script type="text/javascript" src="lessons.php_files/JsHttpRequest.js"></script>
+  
+<script type="text/javascript">
+initHighlightingOnLoad('php', 'html', 'css', 'javascript');
+</script>
+<script type="text/javascript" src="lessons.php_files/jquery_002.js"></script>
+<title>10 преступлений с HTML тегами, которых лучше не совершать</title>
+ <meta name="description" content="">
+ <meta name="keywords" content="html, web дизайн"> <script src="lessons.php_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+try {
+_uacct = "UA-1049821-8";
+urchinTracker();
+} catch(err) {}</script>
+</head><body>
+<div id="maind">
+<table class="tableafterheader" border="0" cellpadding="0" 
+cellspacing="0">
+<tbody><tr>
+<td colspan="3" valign="top"><div id="supermain">
+    
+   
+     <div id="headerContents">
+     <div style="height: 155px; border: 0px solid yellow; width: 100%; 
+text-align: left; background-image: url(&quot;img/headernn.jpg&quot;); 
+background-position: left center; background-repeat: no-repeat;"><div 
+id="menucase">
+	<ul id="saturday">
+    <li><a href="http://ruseller.com/" title="Лучшие уроки по HTML, CSS,
+ jQuery, PHP">ГЛАВНАЯ</a></li>
+    <li><a href="http://ruseller.com/about.php" title="Об авторе">ОБ 
+АВТОРЕ / КОНТАКТЫ</a></li>
+		<li><a href="http://ruseller.com/goodies.php" title="Видеокурсы на 
+DVD">ВИДЕОКУРСЫ НА DVD</a></li>
+        <li><a href="http://www.photoshop-master.ru/" title="фотошоп 
+уроки для начинающих" target="_blank">ФОТОШОП УРОКИ</a></li>
+		<li><a href="http://www.evgeniypopov.com/blog.php" title="Блог Евгения
+ Попова" target="_blank">БЛОГ</a></li>
+              <li><a href="http://ruseller.com/to_offer_lessons.php" 
+title="Предложить урок для перевода">ПРЕДЛОЖИТЬ УРОК</a></li>
+	</ul>
+</div>
+</div>
+
+
+</div>
+</div>
+  
+   </td>
+</tr>
+<tr>
+<td class="leftt" valign="top" width="200"><div class="menu">
+
+<div class="navlessons_top"><a href="http://ruseller.com/lessons.php" 
+class="mainlevel">Уроки и статьи</a></div>
+
+<div class="menu_links">
+
+
+<div class="menu_item_active">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=1">HTML и DHTML <span 
+class="lg">(15)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=2">CSS <span class="lg">(59)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=30">Электронные деньги <span
+ class="lg">(1)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=28">Разное <span class="lg">(91)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=29">Для сайта <span 
+class="lg">(59)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=32">jQuery <span class="lg">(140)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=33">Mootools <span 
+class="lg">(15)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=35">Юзабилити <span 
+class="lg">(6)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=37">PHP <span class="lg">(36)</span></a>
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/lessons.php?rub=40">Wordpress <span 
+class="lg">(8)</span></a>
+</div></div>
+
+<div class="navlessons"><a href="http://ruseller.com/adds.php" 
+class="mainlevel">Скачать</a></div>
+<div class="menu_links">
+
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/adds.php?rub=10">Программы <span class="lg">(17)</span></a>
+ 
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/adds.php?rub=11">Скрипты <span class="lg">(4)</span></a>
+ 
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/adds.php?rub=12">Видеоуроки <span 
+class="lg">(41)</span></a> 
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/adds.php?rub=31">Дизайн <span class="lg">(79)</span></a>
+ 
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/adds.php?rub=34">Полезное <span class="lg">(3)</span></a>
+ 
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/adds.php?rub=36">Шаблоны сайтов <span 
+class="lg">(1245)</span></a> 
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/adds.php?rub=38">Flash заготовки <span 
+class="lg">(1)</span></a> 
+</div>
+
+<div class="menu_item">
+<div class="bullet"></div>
+<a href="http://ruseller.com/adds.php?rub=39">Wordpress темы <span 
+class="lg">(189)</span></a> 
+</div></div>
+
+<div class="navlessons"><a href="http://ruseller.com/adds.php" 
+class="mainlevel">Шпаргалки</a></div>
+<div class="menu_links">
+<div class="menu_item"><div class="bullet"></div><a 
+href="http://ruseller.com/jqueryshpora.php">JQUERY<span class="lg"></span></a></div>
+<div class="menu_item"><div class="bullet"></div><a 
+href="http://ruseller.com/shporacss.php">CSS<span class="lg"></span></a></div>
+<div class="menu_item"><div class="bullet"></div><a 
+href="http://ruseller.com/htmlshpora.php">HTML<span class="lg"></span></a></div>
+
+</div>
+
+<div class="navlessons"><a href="#" class="mainlevel">Новые уроки</a></div>
+<div style="width: 185px; margin: 7px 0pt 0pt 2px; padding: 0pt 2px 2px;
+ background-color: rgb(255, 255, 255);">
+
+<div style="border: 1px solid rgb(204, 204, 204); background-color: 
+rgb(249, 249, 249); margin: 5px;" align="center">
+<p align="center"><strong>Получать на Email</strong></p>
+<p align="center"><img src="lessons.php_files/mail-edit.png" alt="*" 
+align="middle" height="48" width="48"></p>
+<form action="http://feedburner.google.com/fb/a/mailverify" 
+method="post" target="popupwindow" 
+onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ruseller/CdHX',
+ 'popupwindow','scrollbars=yes,width=550,height=520');return true">
+ <p class="inputtext"><input value="Ваш E-mail" class="forminput" 
+onfocus="if (this.value=='Ваш E-mail') this.value='';" name="email" 
+type="text"></p>
+<input value="ruseller/CdHX" name="uri" type="hidden">
+<input name="loc" value="ru_RU" type="hidden">
+<p style="margin-left: 5px;"><input value="Подписаться" 
+class="formbutton" type="submit"></p>
+</form>
+</div>
+<div style="border: 1px solid rgb(204, 204, 204); background-color: 
+rgb(249, 249, 249); margin: 10px 5px 5px;" align="center">
+  <p><strong>Получать через RSS</strong></p>
+  <p align="center"><a href="http://feeds2.feedburner.com/ruseller/CdHX"
+ target="_blank"><img src="lessons.php_files/rss2.png" alt="*" 
+height="80" width="80"></a> </p>
+  <p style="font: 11px Verdana;" align="center">Кликните по иконке</p>
+  <p align="center"><a href="http://feeds2.feedburner.com/ruseller/CdHX"><img
+ src="lessons.php_files/CdHX.gif" style="border: 0pt none;" alt="feed" 
+height="26" width="88"></a></p>
+  <p align="center"><a 
+href="http://fusion.google.com/add?feedurl=http://feeds2.feedburner.com/ruseller/CdHX"><img
+ src="lessons.php_files/add.gif" style="border: 0pt none;" alt="Добавить
+ в Google Reader" height="17" width="104"></a></p>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="navlessons"><a class="mainlevel">10 новых уроков</a></div>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=32&amp;id=538"><img 
+class="mini_img2" src="lessons.php_files/mini_003.jpg" alt="*" 
+align="left" border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=32&amp;id=538"><span 
+style="color: rgb(255, 51, 0);">»</span>Анимированное слайдшоу с помощью
+ jQuery</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=28&amp;id=537"><img 
+class="mini_img2" src="lessons.php_files/mini_004.jpg" alt="*" 
+align="left" border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=28&amp;id=537"><span 
+style="color: rgb(255, 51, 0);">»</span>Создание Photoshoot эффекта с 
+помощью jQuery и CSS</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=28&amp;id=536"><img 
+class="mini_img2" src="lessons.php_files/mini_002.jpg" alt="*" 
+align="left" border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=28&amp;id=536"><span 
+style="color: rgb(255, 51, 0);">»</span>Создание виджета для чтения RSS 
+каналов</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=29&amp;id=535"><img 
+class="mini_img2" src="lessons.php_files/mini.png" alt="*" align="left" 
+border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=29&amp;id=535"><span 
+style="color: rgb(255, 51, 0);">»</span>Меню для сайта с помощью jQuery</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=29&amp;id=534"><img 
+class="mini_img2" src="lessons.php_files/mini.jpg" alt="*" align="left" 
+border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=29&amp;id=534"><span 
+style="color: rgb(255, 51, 0);">»</span>Слайдер изображений с помощью 
+CSS и jQuery</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=32&amp;id=533"><img 
+class="mini_img2" src="lessons.php_files/mini.gif" alt="*" align="left" 
+border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=32&amp;id=533"><span 
+style="color: rgb(255, 51, 0);">»</span>Изменение размеров изображения с
+ помощью jQuery</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=28&amp;id=532"><img 
+class="mini_img2" src="lessons.php_files/mini_002.png" alt="*" 
+align="left" border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=28&amp;id=532"><span 
+style="color: rgb(255, 51, 0);">»</span>Создание пользовательского 
+курсора без файла .cur</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=32&amp;id=531"><img 
+class="mini_img2" src="lessons.php_files/mini_007.png" alt="*" 
+align="left" border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=32&amp;id=531"><span 
+style="color: rgb(255, 51, 0);">»</span>Фокусируем внимание на 
+изображении с помощью jQuery</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=32&amp;id=530"><img 
+class="mini_img2" src="lessons.php_files/mini_008.png" alt="*" 
+align="left" border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=32&amp;id=530"><span 
+style="color: rgb(255, 51, 0);">»</span>Неплохой эффект для картинок с 
+помощью jQuery</a></div></td>
+</tr>
+</tbody></table>
+<table style="border: 0px solid rgb(204, 204, 204); margin-top: 4px;" 
+align="center" bgcolor="#f9f9f9" border="0" cellpadding="0" 
+cellspacing="0" width="180">
+<tbody><tr>
+<td valign="top" width="44"><a 
+href="http://ruseller.com/lessons.php?rub=2&amp;id=529"><img 
+class="mini_img2" src="lessons.php_files/mini_003.png" alt="*" 
+align="left" border="0" height="42" hspace="0" vspace="0" width="42"></a></td>
+<td valign="top" width="136"><div class="content4"><a 
+href="http://ruseller.com/lessons.php?rub=2&amp;id=529"><span 
+style="color: rgb(255, 51, 0);">»</span>Свежий набор из 12 CSS меню</a></div></td>
+</tr>
+</tbody></table>
+</div>
+<br>
+<div class="navlessons"><a href="#" class="mainlevel">Миникурс</a></div>
+<div class="minicourse">
+<div class="minicourse2">
+<p style="font-size: 11px;"><span style="color: rgb(173, 8, 21); 
+font-weight: bold;">Новинка!</span> Бесплатный миникурс для новичков - <strong>"4
+ причины, по которым у Вас должен быть сайт.".</strong></p><p 
+style="font-size: 11px;">Если Вы не знаете, для чего нужен сайт и как на
+ нём можно заработать, то этот курс для Вас. </p> 
+    <img src="lessons.php_files/cover2.jpg" alt="*" height="156" 
+width="150">
+    <div align="center">
+ <form name="SR_form" method="post" target="_blank" 
+action="http://smartresponder.ru/subscribe.html" onsubmit="return 
+SR_submit(this)">
+                  <input name="version" value="1" type="hidden">
+<input name="tid" value="34769" type="hidden">
+<input name="uid" value="27025" type="hidden">
+<input name="charset" value="windows-1251" type="hidden">
+<input name="lang" value="1" type="hidden">
+<input name="did[]" value="10409" type="hidden">
+                 <p class="inputtext"> Ваше имя на русском:<br> <input 
+name="field_name_first" size="23" maxlength="50" class="forminput" 
+type="text"></p>
+                 <p class="inputtext"> Ваш Email адрес: <br><input 
+name="field_email" size="23" maxlength="50" class="forminput" 
+type="text"></p>
+                            <p style="margin-left: 5px;">
+                      <input name="SR_submitButton" value="Подписаться" 
+class="formbutton" type="submit">
+                    </p>
+
+
+                 <div align="center"><a class="small" 
+href="http://ruseller.com/policy.php">Политика приватности</a></div>
+                 
+                 
+
+
+      </form></div>
+
+
+</div>
+</div>
+
+
+<div class="navlessons"><a href="#" class="mainlevel">Скидка на хостинг</a></div>
+<div class="minicourse">
+<div class="minicourse2">
+<p style="font-size: 11px;"><span style="color: rgb(173, 8, 21); 
+font-weight: bold;">Если Вам нужен качественный хостинг</span> и Вы не 
+против сэкономить 10% на его покупке, то Вы можете воспользоваться моим 
+специальным предложением по скидке на хостинг от компании Ютекс.</p> 
+    <div align="center"> <img src="lessons.php_files/discount.png" 
+alt="*" height="96" width="96">
+   
+ </div>
+  <div align="center"><a class="small" target="_blank" 
+href="http://ruseller-board.com/add/hosting/">Узнать подробнее</a></div>
+<br>
+
+</div>
+</div>
+
+<br>
+<div align="center">
+
+<script type="text/javascript" src="lessons.php_files/orphus.js"></script>
+<a title="Система Orphus" href="http://orphus.ru/" id="orphus" 
+target="_blank"><img alt="Система Orphus" 
+src="lessons.php_files/orphus.gif" border="0" height="115" width="125"></a>
+
+</div>
+<br>
+<div align="center">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-0562005659861244";
+/* ruseller lefttd */
+google_ad_slot = "1044453455";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="lessons.php_files/show_ads.js">
+</script><br>
+
+</div>
+
+
+
+<div id="map">
+         <script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t26.10;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=15  title="сегодн\я"><\/a>')</script><a
+ href="http://www.liveinternet.ru/click" target="_blank"><img class=" 
+oszisxtjydpwaibxbyzr" src="lessons.php_files/hit.gif" title="сегодня" 
+border="0" height="15" width="88"></a>
+		 
+</div>      </td>
+<td class="mtd" valign="top">
+<div class="navpanel"><a href="http://ruseller.com/index.php" 
+title="Перейти на главную страницу сайта">Главная</a> » <a 
+href="http://ruseller.com/lessons.php" title="Посмотреть все записи 
+раздела Уроки">Уроки</a> » <a 
+href="http://ruseller.com/lessons.php?rub=1" title="Посмотреть записи 
+раздела Уроки с рубрикой HTML и DHTML">Рубрика HTML и DHTML</a></div><div
+ class="tag_page"><a href="http://ruseller.com/lessons.php?tag" 
+title="Посмотреть все метки раздела Уроки">Метки</a> урока:  <a 
+href="http://ruseller.com/lessons.php?tag=23" title="Посмотреть все 
+записи с меткой html">html</a>, <a 
+href="http://ruseller.com/lessons.php?tag=33" title="Посмотреть все 
+записи с меткой web дизайн">web дизайн</a></div><h2 class="arttitle" 
+align="center">10 преступлений с HTML тегами, которых лучше не совершать</h2><div
+ class="les">
+<p>В данной статье пойдет речь о том, чего не стоит делать с HTML 
+тегами, так как это семантически неправильно.</p>
+<p>Кроме семантики речь также пойдет об устаревших тегах и валидной 
+разметке.</p>
+<p><strong>Преступление № 1</strong> - Вставка блочных элементов в 
+инлайновые</p>
+<p><img src="lessons.php_files/inline-block.png" alt="" height="299" 
+width="501"></p>
+<p>HTML можно отображать двумя способами - блочно или инлайново. Каждый 
+тег изначально блочный или инлайновый. Блочные элементы - слои (div) и 
+абзацы, которые составляют структуру страницы. Инлайновые элементы 
+должны находится внутри блочных, например якори и теги &lt;span&gt;. И 
+поэтому инлайновые элементы всегда должны находится внутри блочных, и не
+ наоборот.</p>
+<p><strong>Преступление № 2</strong> - Не использование атрибута ALT в 
+картинках</p>
+<p><img src="lessons.php_files/alt-attribute.png" alt="" height="300" 
+width="500"></p>
+<p>Атрибут ALT - это обязательный элемент для всех картинок на странице.
+ Он помогает пользователям узнать, что изображено на картинке, если она 
+не отображается по какой-либо причине. Если картинка используется просто
+ как элемент дизайна, тогда все равно добавляйте пустой атрибут - 
+alt="".</p>
+<p><strong>Преступление № 3</strong> - Не использование списков там, где
+ это необходимо</p>
+<p><img src="lessons.php_files/lists.png" alt="" height="378" 
+width="500"></p>
+<p>Полезные теги UL (и OL) можно использовать по разному и они очень 
+гибки и универсальны для отображения. Такие списки отлично подходят для 
+перечисления любой информации, так что даже не думайте об использовании 
+множества &lt;br&gt;.</p>
+<p><strong>Преступление № 4</strong> - Использование &lt;b&gt; и 
+&lt;i&gt; для жирного и курсивного текста</p>
+<p><img src="lessons.php_files/bold.png" alt="" height="299" width="501"></p>
+<p>Теги &lt;b&gt; и &lt;i&gt; делает текст жирным и курсивным, но 
+семантически они классифицированы как презентационные теги, и поэтому 
+лучше всего подобные эффекты делать с помощью  CSS стилей font-weight и 
+font-style. Если же в тексте есть всего несколько слов, которые следует 
+выделить, тогда лучше использовать теги &lt;strong&gt; или &lt;em&gt;, 
+которые выполняют ту же функцию.</p>
+<p><strong>Преступление № 5</strong> - Использование большого количества
+ тегов &lt;br /&gt;</p>
+<p><img src="lessons.php_files/br-tags.png" alt="" height="299" 
+width="501"></p>
+<p>Тег &lt;br /&gt; должен использоваться только один раз для вставки 
+переноса строки. Использование нескольких тегов подряд для отступов не 
+приветствуется.</p>
+<p><strong>Преступление № 6</strong> - Использование неправильных тегов 
+для зачеркивания</p>
+<p><img src="lessons.php_files/strike.png" alt="" height="299" 
+width="501"></p>
+<p>Раньше теги &lt;s&gt; и &lt;strike&gt; использовались для исправлений
+ в тексте. Сегодня же они считаются устаревшими. Они будут работать, но 
+уже есть альтернативы в виде тегов &lt;del&gt; и &lt;ins&gt;.</p>
+<p><strong>Преступление № 7</strong> - Использование инлайновых стилей</p>
+<p><img src="lessons.php_files/inline-style.png" alt="" height="299" 
+width="501"></p>
+<p>Вы же слышали это много раз - инлайновые стили это зло. Идея 
+семантического HTML и CSS заключается в разделении структуры и стилей. 
+Помните, всегда храните стили в таблицы стилей.</p>
+<p><strong>Преступление № 8</strong> - Добавление или удаление границ в 
+HTML</p>
+<p><img src="lessons.php_files/img-border.png" alt="" height="299" 
+width="501"></p>
+<p>Атрибут границы лучше указывать только в таблице стилей, даже если 
+это просто border="0".</p>
+<p><strong>Преступление № 9</strong> - Не использование заголовков</p>
+<p><img src="lessons.php_files/headers.png" alt="" height="299" 
+width="501"></p>
+<p>Заголовки доступны от &lt;h1&gt; и до &lt;h6&gt; и их очень удобно 
+использовать для разделения документа на секции. Если несколько слов 
+объясняют что будет дальше, имеет смысл использование заголовка. Выбора 
+размера заголовка зависит от структуры документа. Главное соблюдайте 
+баланс и используйте заголовки от 1 до 6.</p>
+<p><strong>Преступление № 10</strong> - Использование &lt;blink&gt; или 
+&lt;marquee&gt;</p>
+<p><img src="lessons.php_files/blink.png" alt="" height="299" 
+width="501"></p>
+<p>&lt;blink&gt; и &lt;marquee&gt; это ужасные теги и <strong>не</strong>
+ являются официальными HTML тегами. Если необходимо привлечь к чему-то 
+внимание, придумайте другой способ сделать это :).</p>
+</div><div class="afterles"><p>Данный урок подготовлен для Вас командой 
+сайта <a href="http://ruseller.com/" target="_blank" title="уроки по 
+созданию сайтов">http://ruseller.com</a><br>
+Источник урока:
+<a href="http://www.line25.com/" target="_blank">www.line25.com</a></p></div>
+<div class="afterles"><div class="content3">
+<div class="line">
+<img src="lessons.php_files/spacer.gif" alt="*" height="1" width="1">
+</div>
+<div id="raiting_star" class="raiting_star">
+<div id="raiting" class="raiting">
+<div id="raiting_blank" class="raiting_blank"></div>
+<div id="raiting_hover" class="raiting_hover"></div>
+<div id="raiting_votes" class="raiting_votes" style="width: 51px;"></div>
+</div>
+<div id="raiting_info" class="raiting_info">  <img 
+src="lessons.php_files/load.gif" alt="*" height="12" width="12"> <span>Рейтинг:
+ 3</span></div>
+<div style="clear: both;"></div>
+</div>
+<div class="info">
+<span class="comment">Урок создан: 2.6.2009</span>&nbsp;&nbsp;
+<span class="comment">Просмотров: 11673</span>&nbsp;&nbsp;
+<span class="comment"><a href="http://ruseller.com/reprint.php" 
+target="_blank">Правила перепечатки</a></span>
+</div>
+<div style="clear: both;"></div>
+<div id="only_ruseller_user"><p>Оценивать уроки могут только 
+зарегистрированные пользователи</p></div><div id="odnaknopka1">
+<script src="lessons.php_files/ok2.js" type="text/javascript"></script></div>
+<p style="margin-top: 20px;">Если хотите не упустить данный урок, 
+добавьте его в закладки</p>
+</div>
+</div>
+
+<div class="last_les"><p><strong>Пять последних добавленных уроков в 
+рубрике <a href="http://ruseller.com/lessons.php?rub=1">HTML и DHTML</a></strong>:<br><br></p><div
+ class="content4">
+<a href="http://ruseller.com/lessons.php?rub=1&amp;id=449"><img 
+src="lessons.php_files/mini_006.png" class="mini_img" alt="*" 
+align="left" height="42" width="42"></a>
+<p class="h4"><a href="http://ruseller.com/lessons.php?rub=1&amp;id=449"><span
+ style="color: rgb(255, 51, 0); font-weight: 500;">»</span>Создание 
+шаблона сайта с нуля используя новые возможности HTML 5</a><br>
+В этом уроке мы немного поэкспериментируем с новыми возможностями HTML 5
+ и CSS 3. </p>
+</div><br>
+<div class="content4">
+<a href="http://ruseller.com/lessons.php?rub=1&amp;id=425"><img 
+src="lessons.php_files/ico.gif" class="mini_img" alt="*" align="left" 
+height="42" width="42"></a>
+<p class="h4"><a href="http://ruseller.com/lessons.php?rub=1&amp;id=425"><span
+ style="color: rgb(255, 51, 0); font-weight: 500;">»</span>Подсказка для
+ поля формы</a><br>
+В этом простом уроке мы рассмотрим создание подсказки в форме. Это даст 
+возможность помочь пользователю в заполнении того или иного поля, 
+показав пример.</p>
+</div><br>
+<div class="content4">
+<a href="http://ruseller.com/lessons.php?rub=1&amp;id=345"><img 
+src="lessons.php_files/mini_004.png" class="mini_img" alt="*" 
+align="left" height="42" width="42"></a>
+<p class="h4"><a href="http://ruseller.com/lessons.php?rub=1&amp;id=345"><span
+ style="color: rgb(255, 51, 0); font-weight: 500;">»</span>Советы по 
+правильному использованию html (2-20)</a><br>
+В сегодняшнем уроке я познакомлю Вас со второй десяткой советов по 
+правильному использованию языка разметки html.</p>
+</div><br>
+<div class="content4">
+<a href="http://ruseller.com/lessons.php?rub=1&amp;id=344"><img 
+src="lessons.php_files/mini_005.png" class="mini_img" alt="*" 
+align="left" height="42" width="42"></a>
+<p class="h4"><a href="http://ruseller.com/lessons.php?rub=1&amp;id=344"><span
+ style="color: rgb(255, 51, 0); font-weight: 500;">»</span>Советы по 
+правильному использованию html (1-10)</a><br>
+В сегодняшнем уроке я познакомлю Вас с первой десяткой советов по 
+правильному использованию языка разметки html.</p>
+</div><br>
+<div class="content4">
+<a href="http://ruseller.com/lessons.php?rub=1&amp;id=247"><img 
+src="lessons.php_files/minihtml.jpg" class="mini_img" alt="*" 
+align="left" height="42" width="42"></a>
+<p class="h4"><a href="http://ruseller.com/lessons.php?rub=1&amp;id=247"><span
+ style="color: rgb(255, 51, 0); font-weight: 500;">»</span>HTML 
+шпаргалка</a><br>
+HTML шпаргалка формата А4 на один лист специально разработана для 
+предоставления быстрой справки про HTML.</p>
+</div><br>
+</div><p class="pmess" align="center">Зарегистрируйтесь, чтобы иметь 
+возможность добавлять комментарии</p><br><div class="com">
+<p><strong>Комментарии:</strong></p><div id="comtab"></div><div 
+class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt1015.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Сергей_Патин</strong></span>&nbsp;<span
+ class="comdate">(2010-02-05 14:50:47)</span></p><p>dionis
+Странный совет. Из раздела: не пользуйтесь зажигалкой - добывайте огонь 
+трением.</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/no_avt.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>dionis</strong></span>&nbsp;<span
+ class="comdate">(2010-02-05 14:46:16)</span></p><p>не пользуйтесь 
+DreamweaverCS пользуйтесь обычным блокнотом</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/no_avt.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>anuar</strong></span>&nbsp;<span
+ class="comdate">(2010-01-16 09:42:26)</span></p><p>Да надо с &lt;b&gt; 
+на &lt;strong&gt; переходить</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/no_avt.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>sicret</strong></span>&nbsp;<span
+ class="comdate">(2009-10-23 12:22:29)</span></p><p>я тоже не понял к 
+чему это статья......неграмотно однако.
+официально есть же спецификации W3C причем на русском языке..
+которых и нужно придерживаться...
+к тому же оформлена валидация(проверка на соответствие вашего html ) 
+выбранному стандарту</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/no_avt.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>neverfan</strong></span>&nbsp;<span
+ class="comdate">(2009-09-28 16:21:11)</span></p><p>Жаль в статье не 
+указано, чем все это обернется, не почему это плохо(типа устарело и 
+т.д.), а чем это плохо, было бы интересно...</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt10373.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Yoon</strong></span>&nbsp;<span
+ class="comdate">(2009-08-01 12:21:02)</span></p><p>Не инлайновые, а 
+строчные. Блочные и строчные.</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt2021.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>МихаилГорюнов</strong></span>&nbsp;<span
+ class="comdate">(2009-06-07 19:32:07)</span></p><p>Ну, blink'а я не 
+знаю, а marquee в чём виноват?
+Вместо обычного HTML использовать Flash или jQuery!?
+Несогласен!</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt1557.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Олег</strong></span>&nbsp;<span
+ class="comdate">(2009-06-03 16:02:59)</span></p><p>Dreamweaver.CS4  
+rus. - на панели "свойства " кнопка 'B' - вызывает тег &lt;b&gt;, а в 
+CS3 тег &lt;strong&gt;. Для вызова &lt;strong&gt; в CS4 пользуюсь 
+выпадающим меню - "Вставка " , кнопка 'S' (не удобно.)</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/no_avt.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Виталий</strong></span>&nbsp;<span
+ class="comdate">(2009-06-03 10:18:48)</span></p><p>Полезная статья. 
+Спасибо!</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt1015.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Сергей_Патин</strong></span>&nbsp;<span
+ class="comdate">(2009-06-03 09:12:57)</span></p><p>Олег, а у меня в CS4
+ именно &lt;strong&gt; используется для выделения жирным.</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/no_avt.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Роман</strong></span>&nbsp;<span
+ class="comdate">(2009-06-03 08:13:23)</span></p><p>"Аттрибут" и 
+"картинков" во втором преступлении - тоже преступление.</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt1557.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Олег</strong></span>&nbsp;<span
+ class="comdate">(2009-06-02 19:30:46)</span></p><p>В Dreamweaver.CS4 
+наоборот, заменили тег  &lt;strong&gt; на &lt;b&gt; ?</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt4320.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Игорь_Ермаков</strong></span>&nbsp;<span
+ class="comdate">(2009-06-02 19:09:45)</span></p><p>Крутой урок :)</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/no_avt.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Live</strong></span>&nbsp;<span
+ class="comdate">(2009-06-02 19:01:57)</span></p><p>почему все картинки в
+ статье без альта?))</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/no_avt.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Светлана</strong></span>&nbsp;<span
+ class="comdate">(2009-06-02 17:09:03)</span></p><p>присоединяюсь, 
+полезная статья для новичка, вроде меня:)
+
+ребята, увидела сегодня новую для меня вещь на сайте француза-дизайнера 
+(http://stpo.fr/v2/contact.html), возможно, пригодится для темы 
+следующих ваших уроков:
+при нажатии на "ma vCard" под традиционным телефоном и e-mail в его 
+контактах  открывается файл с его данными, которые можно автоматом 
+загрузить в Outlook Express... 
+кто знает, как добавить в контакты на сайте такую же кнопочку?
+заранее спасибо!</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt5684.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Sergey</strong></span>&nbsp;<span
+ class="comdate">(2009-06-02 16:21:39)</span></p><p>Интересно...</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt5854.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>Dimka</strong></span>&nbsp;<span
+ class="comdate">(2009-06-02 14:00:35)</span></p><p>Спасиба :) будем 
+учитывать :)</p>
+</div>
+</div>
+
+<div class="comment_block">
+<div class="comment_avatar">
+<img src="lessons.php_files/avt2677.jpg" alt="аватар" title="аватар" 
+align="left" height="80" width="80">
+</div>
+<div class="comment_arrow">
+<img src="lessons.php_files/coma.jpg" style="left: 1px; top: 14px; 
+position: absolute;" alt="*" height="20" width="20">
+</div>
+<div class="comment_text"><p><span class="comname">Автор: <strong>scorik</strong></span>&nbsp;<span
+ class="comdate">(2009-06-02 13:11:36)</span></p><p>Очень полезная 
+статья. По делу.</p>
+</div>
+</div>
+
+<br></div></td>
+   <td class="rightt" valign="top" width="200px">
+<div class="menu">
+
+<div class="navlessons_top"><a href="#" class="mainlevel">Вход</a></div>
+<div style="width: 185px; margin: 7px 0pt 10px 2px; padding: 0pt 2px 
+2px; background-color: rgb(255, 255, 255);">
+
+  <form id="entry" name="entry" method="post" action="enter.php">
+    <input name="link" value="lessons.php?rub=1&amp;id=241" 
+type="hidden">
+    <br>
+	<p class="inputtext" align="center">Логин:<br>
+      <input name="login" id="login" maxlength="20" class="forminput" 
+type="text"></p>
+    <p class="inputtext" align="center">Пароль:<br><input name="pwd" 
+id="pwd" class="forminput" maxlength="20" value="" type="password"></p>
+    <div align="center">
+            <script type="text/javascript" src="lessons.php_files/for_righttd.htm"></script>
+ 
+    </div>
+    <div id="checkbox1"> 
+	  <p class="inputtext" style="margin-left: 15px;" align="left"><input 
+name="remember" id="remember" value="yes" 
+onclick="toAddcheckbox('checkbox1','to_add'); return false;" 
+type="checkbox">&nbsp;Запомнить меня</p>
+    </div>
+    <div align="center">
+            
+    </div>
+    <p class="inputtext" align="center"><input name="submit_enter" 
+value="Вход" class="formbutton" type="submit"></p>
+      </form>
+      <div align="center"><a href="http://ruseller.com/register.php" 
+class="small">Регистрация</a><br>
+        <a href="http://ruseller.com/reminder.php" class="small">Забыли 
+пароль?</a></div>
+
+	 
+</div>
+
+</div>
+
+<div class="navlessons"><a href="#" class="mainlevel">Поиск по сайту</a></div>
+ <div align="center">
+ <p align="center"><img src="lessons.php_files/find.jpg" alt="поиск" 
+align="middle" height="80" width="80"></p>
+	 <form action="search.php" method="get">
+	    <p class="inputtext">Ваш поисковый запрос:<br><input name="search" 
+class="forminput" type="text"></p>
+	 <input name="type" value="1" type="hidden">
+	  <p style="margin-left: 5px;"><input name="submit_search" 
+id="submit_search" class="formbutton" value="Искать" type="submit"></p>
+	 </form>
+	 </div>
+     
+     <div class="navlessons"><a href="#" class="mainlevel">Блог на 
+Wordpress</a></div>
+<div class="minicourse3">
+<div class="minicourse2">
+<p style="font-size: 11px;">Если Вы давно мечтаете о создании 
+собственного блога на движке Wordpress, то советую Вам обратить внимание
+ на мой новый видеокурс <strong>"Wordpress - Профессиональный блог за 
+один день"</strong>. Это более 100 видеоуроков по всем аспектам создания
+ и ведения своего блога на самом популярном движке в мире.</p> 
+    <img src="lessons.php_files/wp168.jpg" alt="*" height="207" 
+width="168">
+   
+
+
+                 <div align="center"><a class="small" target="_blank" 
+href="http://wordpress-video.ru/newruseller">Узнать подробнее</a></div><br>
+                 
+                 
+
+
+      
+
+
+</div>
+</div>
+
+
+<div class="navlessons"><a href="http://ruseller.com/lessons.php?tag" 
+class="mainlevel" title="Обзор всех меток в увеличенном облаке">Облако 
+меток</a></div>
+<div align="center"><div class="static_tags_list"><span class="smallest"><a
+ href="http://ruseller.com/lessons.php?tag=157" title="записей: 1">курсор</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=156" title="записей: 2">css3</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=151" title="записей: 1">закладки</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=145" title="записей: 2">oop</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=140" title="записей: 3">wordpress</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=139" title="записей: 2">часы</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=138" title="записей: 2">пароль</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=137" title="записей: 1">баги</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=136" title="записей: 1">чат</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=135" title="записей: 1">звезды</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=134" title="записей: 1">ускорение</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=133" title="записей: 1">twitter</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=132" title="записей: 1">google
+ maps</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=131" title="записей: 1">html 5</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=130" title="записей: 3">прозрачность</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=129" title="записей: 2">ie6</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=128" title="записей: 1">png</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=127" title="записей: 4">seo</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=126" title="записей: 2">gd 
+library</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=125" title="записей: 2">cookies</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=124" title="записей: 2">rss</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=123" title="записей: 3">рейтинг</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=122" title="записей: 1">цитаты</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=121" title="записей: 2">блог</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=120" title="записей: 1">комментарии</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=119" title="записей: 2">theme</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=118" title="записей: 2">тема</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=117" title="записей: 1">генератор</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=116" title="записей: 2">captcha</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=115" title="записей: 1">cycle</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=114" title="записей: 1">z 
+index</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=113" title="записей: 3">позиционирование</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=111" title="записей: 2">загрузка</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=110" title="записей: 1">кеширование</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=109" title="записей: 1">бегущая
+ строка</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=108" title="записей: 1">тест</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=107" title="записей: 1">домен</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=106" title="записей: 15">советы</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=105" title="записей: 2">текст</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=104" title="записей: 1">видео</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=103" title="записей: 10">регистрация</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=102" title="записей: 1">текстуры</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=101" title="записей: 1">radikal.ru</a></span>
+ <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=100" title="записей: 3">фото</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=99"
+ title="записей: 1">favicon</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=98" title="записей: 2">слайдшоу</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=97"
+ title="записей: 1">карта</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=96" title="записей: 1">лента</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=95"
+ title="записей: 2">загрузка файлов</a></span> <span class="smallest"><a
+ href="http://ruseller.com/lessons.php?tag=94" title="записей: 5">голосование</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=93"
+ title="записей: 4">опрос</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=92" title="записей: 3">поля 
+формы</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=91" title="записей: 2">api</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=90"
+ title="записей: 1">чарты</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=89" title="записей: 1">диаграммы</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=88"
+ title="записей: 2">mod rewrite</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=87" title="записей: 1">календарь</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=86"
+ title="записей: 6">спрайты</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=85" title="записей: 1">текстовое
+ поле</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=84" title="записей: 1">константа</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=83"
+ title="записей: 1">include</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=82" title="записей: 4">защита</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=81"
+ title="записей: 2">multiple</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=80" title="записей: 2">select</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=79"
+ title="записей: 6">htaccess</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=78" title="записей: 1">выпадающие
+ списки</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=77" title="записей: 3">миниатюры</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=76"
+ title="записей: 2">сообщения</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=75" title="записей: 2">чекбоксы</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=74"
+ title="записей: 1">новостной блок</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=73" title="записей: 4">вкладки</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=72"
+ title="записей: 11">выезжающая панель</a></span> <span class="smallest"><a
+ href="http://ruseller.com/lessons.php?tag=70" title="записей: 12">форма</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=69"
+ title="записей: 2">шпаргалка</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=68" title="записей: 9">обзоры</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=67"
+ title="записей: 5">таблица</a></span> <span class="small"><a 
+href="http://ruseller.com/lessons.php?tag=66" title="записей: 35">анимация</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=65"
+ title="записей: 3">верстка</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=64" title="записей: 2">wysiwyg</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=63"
+ title="записей: 1">wysiwig</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=62" title="записей: 2">cms</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=61"
+ title="записей: 1">faq</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=44" title="записей: 3">уголок</a></span>
+ <span class="medium"><a href="http://ruseller.com/lessons.php?tag=43" 
+title="записей: 52">разное</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=42" title="записей: 8">ссылки</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=40"
+ title="записей: 2">редакторы</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=39" title="записей: 3">email</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=38"
+ title="записей: 10">mootools</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=37" title="записей: 6">списки</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=36"
+ title="записей: 22">юзабилити</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=35" title="записей: 8">модальные
+ окна</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=34" title="записей: 8">плагины</a></span>
+ <span class="medium"><a href="http://ruseller.com/lessons.php?tag=33" 
+title="записей: 59">web дизайн</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=31" title="записей: 1">счетчик</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=30"
+ title="записей: 4">аудио</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=29" title="записей: 6">flash</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=28"
+ title="записей: 8">ajax</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=27" title="записей: 10">слайдер</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=26"
+ title="записей: 7">окна</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=24" title="записей: 20">javascript</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=23"
+ title="записей: 19">html</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=22" title="записей: 16">кодинг</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=21"
+ title="записей: 10">оптимизация</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=20" title="записей: 4">шаблоны</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=19"
+ title="записей: 21">формы</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=18" title="записей: 3">кнопка</a></span>
+ <span class="medium"><a href="http://ruseller.com/lessons.php?tag=17" 
+title="записей: 56">меню</a></span> <span class="medium"><a 
+href="http://ruseller.com/lessons.php?tag=16" title="записей: 64">изображения</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=15"
+ title="записей: 8">фон</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=14" title="записей: 15">подсказки</a></span>
+ <span class="large"><a href="http://ruseller.com/lessons.php?tag=13" 
+title="записей: 83">css</a></span> <span class="smallest"><a 
+href="http://ruseller.com/lessons.php?tag=12" title="записей: 18">контактная
+ форма</a></span> <span class="small"><a 
+href="http://ruseller.com/lessons.php?tag=11" title="записей: 29">php</a></span>
+ <span class="smallest"><a href="http://ruseller.com/lessons.php?tag=10"
+ title="записей: 11">ротатор</a></span> <span class="small"><a 
+href="http://ruseller.com/lessons.php?tag=9" title="записей: 30">галерея</a></span>
+ <span class="largest"><a href="http://ruseller.com/lessons.php?tag=8" 
+title="записей: 140">jquery</a></span> </div></div>
+<div align="center"><p class="inputtext"><a 
+href="http://ruseller.com/lessons.php?tag">Показать flash облако</a></p></div><br>
+
+
+
+
+<div class="navlessons"><a href="#" class="mainlevel">Раскрутка</a></div>
+<div class="minicourse3">
+<div class="minicourse2">
+<p style="font-size: 11px;">Меня часто спрашивают, как я раскручивал 
+данный сайт?</p><p style="font-size: 11px;">Мой ответ таков. Для 
+раскрутки данного сайта использовалась методика <strong>"Мастер план по 
+раскрутке сайта"</strong>, которая была предложена Юсуфом Губайдуллиным в
+ начале 2009-го года. </p> 
+    <img src="lessons.php_files/usuf.jpg" alt="*" height="170" 
+width="168">
+   
+
+
+       <div align="center"><a class="small" target="_blank" 
+href="http://ruseller.com/p/newseo.php">Узнать подробнее</a></div><br>
+                 
+                 
+
+
+      
+
+
+</div>
+</div>
+
+
+
+<div class="navlessons"><a href="http://ruseller.com/adds.php" 
+class="mainlevel">Ссылки от гугл</a></div>
+<br>
+<div align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0562005659861244";
+/* Небоскреб в правом блоке руселлера */
+google_ad_slot = "6729923588";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="lessons.php_files/show_ads.js">
+</script>
+</div>
+
+
+
+
+
+</td>
+</tr></tbody></table>
+</div>
+<div class="bottom" align="center">
+<br>
+<p class="copy">Copyright © 2008 Евгений Попов.| Все права защищены. | <a
+ href="http://www.evgeniypopov.ru/" target="_blank">Служба поддержки</a></p>
+  
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="lessons.php_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10365880-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<div id="dropin" style="position: absolute; visibility: hidden; left: 
+600px; top: 110px; width: 270px; background-color: rgb(255, 255, 255);">
+
+<!--Начало Вашего Шаблона -->
+<table style="border: 1px solid rgb(66, 66, 66);" align="center" 
+bgcolor="#ffffff" border="0" width="270">
+<tbody><tr> 
+<td align="center" valign="top" width="100%"> 
+<div align="center">
+<p style="font-family: Verdana; font-size: 15px; font-weight: bold; 
+text-indent: 0px; color: rgb(204, 0, 0);">Хотите бесплатно получать 2 
+видеоурока по теме сайтостроения каждый месяц?</p>
+</div><div class="widget"> 
+<form name="SR_form" method="post" target="_blank" 
+action="http://smartresponder.ru/subscribe.html" onsubmit="return 
+SR_submit(this)">
+<input name="version" value="1" type="hidden">
+<input name="tid" value="34769" type="hidden">
+<input name="uid" value="27025" type="hidden">
+<input name="charset" value="windows-1251" type="hidden">
+<input name="lang" value="1" type="hidden">
+<input name="did[]" value="9267" type="hidden">
+<p style="font-family: Verdana,sans-serif; margin: 0px; padding: 0px; 
+color: rgb(0, 0, 0); font-size: 12px; font-weight: normal; text-indent: 
+0px;"> Ваше имя на русском:<br>
+<input name="field_name_first" size="23" maxlength="50" style="border: 
+1px solid rgb(193, 193, 193); font-family: Verdana; font-size: 11px; 
+width: 140px; color: rgb(66, 66, 66);" type="text"></p><br>
+<p style="font-family: Verdana,sans-serif; margin: 0px; padding: 0px; 
+color: rgb(0, 0, 0); font-size: 12px; font-weight: normal; text-indent: 
+0px;"> Ваш Email адрес:<br>
+<input name="field_email" size="23" maxlength="50" style="margin: 0px; 
+padding: 0px; border: 1px solid rgb(193, 193, 193); font-family: 
+Verdana; font-size: 11px; width: 140px; color: rgb(66, 66, 66);" 
+type="text"></p>
+<p style="margin: 10px 5px 5px; padding: 0px; text-indent: 0px;">
+<input name="SR_submitButton" value="Да, хочу!" style="font-family: 
+Verdana,sans-serif; border: 1px solid gray; font-size: 11px; width: 
+140px; height: 20px; background-color: rgb(246, 246, 246); 
+background-image: url(&quot;img/button2.gif&quot;); color: rgb(0, 0, 0);
+ font-weight: bold;" type="submit"></p>
+</form>
+</div>
+<p style="font-family: Verdana; font-size: 11px; text-indent: 0px;"><font
+ color="#999999">Приватность Ваших данных гарантируется.</font></p>
+<div align="right"><a href="#" onclick="dismissbox();return false" 
+style="font-size: 11px;">[X]</a> </div>
+</td>
+</tr>
+</tbody></table><!-- Конец Вашего Шаблона -->
+</div>
+</body></html>

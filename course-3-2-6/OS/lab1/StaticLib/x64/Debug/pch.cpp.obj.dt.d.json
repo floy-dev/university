@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\acced\\onedrive\\desktop\\university\\course-3-2-6\\os\\lab1\\staticlib\\pch.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\acced\\onedrive\\desktop\\university\\course-3-2-6\\os\\lab1\\staticlib\\pch.h",
+            "c:\\users\\acced\\onedrive\\desktop\\university\\course-3-2-6\\os\\lab1\\staticlib\\framework.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

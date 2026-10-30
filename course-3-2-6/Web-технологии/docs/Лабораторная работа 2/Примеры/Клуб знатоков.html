@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Greeting</title>
+	<script language="JavaScript">
+		function ref() {
+		xname = window.showModalDialog("dianame.html", "", "dialogWidth:400px; dialogHeight:300px");
+		Greet.value="Хорошей игры,"+xname+"!";
+		//alert('fefe');
+		}
+	</script>
+</head>
+
+<body>
+
+	<center>
+		<h1> Клуб знатоков</h1>
+		<input type="Button" value="Ваше имя" onclick="ref();" />
+		<br /><br />
+		<input type="Text" id="Greet" size="30" />
+	</center>
+
+</body>
+</html>

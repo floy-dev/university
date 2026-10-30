@@ -1,31 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USer\\Desktop\\university\\course-3-1\\math\\lab1\\lab1.csproj": {}
+    "C:\\Users\\acced\\OneDrive\\Desktop\\university\\course-3-1-5\\math\\lab1\\lab1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USer\\Desktop\\university\\course-3-1\\math\\lab1\\lab1.csproj": {
+    "C:\\Users\\acced\\OneDrive\\Desktop\\university\\course-3-1-5\\math\\lab1\\lab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\math\\lab1\\lab1.csproj",
+        "projectUniqueName": "C:\\Users\\acced\\OneDrive\\Desktop\\university\\course-3-1-5\\math\\lab1\\lab1.csproj",
         "projectName": "lab1",
-        "projectPath": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\math\\lab1\\lab1.csproj",
-        "packagesPath": "C:\\Users\\USer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USer\\Desktop\\university\\course-3-1\\math\\lab1\\obj\\",
+        "projectPath": "C:\\Users\\acced\\OneDrive\\Desktop\\university\\course-3-1-5\\math\\lab1\\lab1.csproj",
+        "packagesPath": "C:\\Users\\acced\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acced\\OneDrive\\Desktop\\university\\course-3-1-5\\math\\lab1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\acced\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
+            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -40,10 +39,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "imports": [
             "net461",
@@ -56,12 +56,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.19, 9.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[9.0.19, 9.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.19, 9.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.19, 9.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

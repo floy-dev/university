@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cars version="1">
+    <car id="1">
+        <brand>lada</brand>
+        <model>vesta</model>
+        <color>white</color>
+        <registrationNumber>A001AA31</registrationNumber>
+        <owner>
+            <lastName>Dmitriev</lastName>
+            <firstName>Dmitry</firstName>
+            <patronymic>Anatolievich</patronymic>
+        </owner>
+        <manufactureYear>2007</manufactureYear>
+        <price>900000.0</price>
+    </car>
+    <car id="2">
+        <brand>Toyota</brand>
+        <model>Camry</model>
+        <color>Чёрный</color>
+        <registrationNumber>А002АА31</registrationNumber>
+        <owner>
+            <lastName>Петров</lastName>
+            <firstName>Пётр</firstName>
+            <patronymic>Петрович</patronymic>
+        </owner>
+        <manufactureYear>2019</manufactureYear>
+        <price>2850000.0</price>
+    </car>
+    <car id="3">
+        <brand>Hyundai</brand>
+        <model>Solaris</model>
+        <color>Серебристый</color>
+        <registrationNumber>А003АА31</registrationNumber>
+        <owner>
+            <lastName>Сидоров</lastName>
+            <firstName>Сергей</firstName>
+            <patronymic>Алексеевич</patronymic>
+        </owner>
+        <manufactureYear>2018</manufactureYear>
+        <price>1200000.0</price>
+    </car>
+    <car id="4">
+        <brand>Kia</brand>
+        <model>Rio</model>
+        <color>Синий</color>
+        <registrationNumber>А004АА31</registrationNumber>
+        <owner>
+            <lastName>Смирнов</lastName>
+            <firstName>Алексей</firstName>
+            <patronymic>Олегович</patronymic>
+        </owner>
+        <manufactureYear>2020</manufactureYear>
+        <price>1450000.0</price>
+    </car>
+    <car id="5">
+        <brand>Renault</brand>
+        <model>Logan</model>
+        <color>Серый</color>
+        <registrationNumber>А005АА31</registrationNumber>
+        <owner>
+            <lastName>Кузнецов</lastName>
+            <firstName>Дмитрий</firstName>
+            <patronymic>Сергеевич</patronymic>
+        </owner>
+        <manufactureYear>2017</manufactureYear>
+        <price>950000.0</price>
+    </car>
+    <car id="6">
+        <brand>Skoda</brand>
+        <model>Octavia</model>
+        <color>Белый</color>
+        <registrationNumber>А006АА31</registrationNumber>
+        <owner>
+            <lastName>Попов</lastName>
+            <firstName>Николай</firstName>
+            <patronymic>Андреевич</patronymic>
+        </owner>
+        <manufactureYear>2022</manufactureYear>
+        <price>2300000.0</price>
+    </car>
+    <car id="7">
+        <brand>Volkswagen</brand>
+        <model>Polo</model>
+        <color>Красный</color>
+        <registrationNumber>А007АА31</registrationNumber>
+        <owner>
+            <lastName>Волков</lastName>
+            <firstName>Михаил</firstName>
+            <patronymic>Игоревич</patronymic>
+        </owner>
+        <manufactureYear>2016</manufactureYear>
+        <price>1100000.0</price>
+    </car>
+    <car id="8">
+        <brand>Nissan</brand>
+        <model>Qashqai</model>
+        <color>Зелёный</color>
+        <registrationNumber>А008АА31</registrationNumber>
+        <owner>
+            <lastName>Морозов</lastName>
+            <firstName>Артём</firstName>
+            <patronymic>Викторович</patronymic>
+        </owner>
+        <manufactureYear>2020</manufactureYear>
+        <price>2100000.0</price>
+    </car>
+    <car id="9">
+        <brand>Ford</brand>
+        <model>Focus</model>
+        <color>Синий</color>
+        <registrationNumber>А009АА31</registrationNumber>
+        <owner>
+            <lastName>Новиков</lastName>
+            <firstName>Евгений</firstName>
+            <patronymic>Романович</patronymic>
+        </owner>
+        <manufactureYear>2015</manufactureYear>
+        <price>870000.0</price>
+    </car>
+    <car id="10">
+        <brand>Geely</brand>
+        <model>Coolray</model>
+        <color>Оранжевый</color>
+        <registrationNumber>А010АА31</registrationNumber>
+        <owner>
+            <lastName>Фёдоров</lastName>
+            <firstName>Илья</firstName>
+            <patronymic>Максимович</patronymic>
+        </owner>
+        <manufactureYear>2023</manufactureYear>
+        <price>2600000.0</price>
+    </car>
+</cars>

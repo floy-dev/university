@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\PrintLibrary.obj",
+            "outputs": [
+                "x64\\Debug\\PrintLibrary.h_F1244617FFCAD134.ifc.dt.module.json",
+                "x64\\Debug\\PrintLibrary.h_F1244617FFCAD134.ifc.dt.d.json",
+                "x64\\Debug\\PrintLibrary.h.ifc",
+                "x64\\Debug\\StaticLib.pch"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\acced\\OneDrive\\Desktop\\university\\course-3-2-6\\OS\\lab1\\StaticLib\\PrintLibrary.h",
+                    "source-path": "c:\\users\\acced\\onedrive\\desktop\\university\\course-3-2-6\\os\\lab1\\staticlib\\printlibrary.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

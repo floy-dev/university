@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta name=keywords content="JavaScript,примеры,описание,введение,скрипт,интернет,Internet,Запуск JavaScript,Размещение JavaScrip,Браузеры,События,Функции,Иерархия объектов,Объект location,Создание фреймов,Фреймы,Навигационные панели,Создание окон,Закрытие окон,Динамическое создание документов,Динамическое создание VRML-сцен,Строка состояния,Таймеры,Прокрутка текста,Объект Date,Объект Array,Массивы в JavaScript 1.0,Объект Math,генерация случайных чисел,Проверка данных в форме,Проверка на наличие определенных символов,Передача данных из формы,Изображения,Загрузка новых изображений,Упреждающая загрузка,Смена картинок как реакция на события,Создание слоев,Слои,Перемещение слоев,Вырезка из слоя,Вложенные слои,Специальные эффекты,Новые события,Объект Event,Перехват события,drag & drop,События в JavaScript 1.2,MouseDown,MouseMove,MouseUp">
+<meta name=description content="Введение в JAVASCRIPT ДЛЯ МАГА, Стефан Кох, содержание, перевод Р. Усманова, апрель 1998">
+<meta name=robots content=all>
+<meta name=document-state content=static>
+<title>Введение в JAVASCRIPT ДЛЯ МАГА</title>
+
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#b50000" alink="#0000b5" vlink="#0000b5">
+
+<center>
+<font size=+2><font size=+3>В</font>ВЕДЕНИЕ В 
+<font size=+3>J</font>AVA<font size=+3>S</font>CRIPT</font><br>
+<font size=+1>РЕДАКЦИЯ 2.4</font><br>
+<i><b><font size=-1>&#169; 1996, 1997 Стефан Кох (Stefan Koch)</font></b></i><p>
+<i><font size=-1>Перевод на русский язык для Центра Информационных Технологий<br>
+с разрешения Стефана Коха - 
+<a href="http://www.geocities.com/SiliconValley/Vista/2150">Радик Усманов</a></font></i>
+</center>
+<p><br><br>
+
+<center>
+<table width=80% cellspacing=15>
+
+<td width=50% valign=top>
+  <a href="part1/part1.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part1/part1.htm">
+  <img src="pics/p1.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p1.gif" alt="Часть 1" width=188 height=23 border=0><br>
+  <font size=+1>Первые шаги</font></a><!--ignore-->
+<!--/ignore-->
+  <br>
+  <ul>
+    <li><a href="part1/part1.htm#what" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part1/part1.htm#what">Что такое JavaScript</a>
+    <li><a href="part1/part1.htm#java" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part1/part1.htm#java">JavaScript - это не Java!</a>
+    <li><a href="part1/part1.htm#running" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part1/part1.htm#running">Запуск JavaScript</a>
+    <li><a href="part1/part1.htm#embed" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part1/part1.htm#embed">Размещение JavaScript на HTML-странице</a>
+    <li><a href="part1/part1.htm#nonjs" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part1/part1.htm#nonjs">Браузеры без поддержки JavaScript</a>
+    <li><a href="part1/part1.htm#events" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part1/part1.htm#events">События</a>
+    <li><a href="part1/part1.htm#functions" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part1/part1.htm#functions">Функции</a>
+  </ul>
+</td>
+
+<td width=50% valign=top>
+  <a href="part2/part2.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part2/part2.htm">
+  <img src="pics/p2.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p2.gif" alt="Часть 2" width=188 height=23 border=0><br>
+  <font size=+1>Документ HTML</font></a><!--ignore-->
+  <!--/ignore--><br>
+  <ul>
+    <li><a href="part2/part2.htm#html" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part2/part2.htm#html">Иерархия объектов JavaScript</a>
+    <li><a href="part2/part2.htm#location" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part2/part2.htm#location">Объект location</a>
+  </ul>
+</td>
+<tr>
+
+<td width=50% valign=top>
+  <a href="part3/part3.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part3/part3.htm">
+  <img src="pics/p3.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p3.gif" alt="Часть 3" width=188 height=23 border=0><br>
+  <font size=+1>Фреймы</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part3/part3.htm#frames" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part3/part3.htm#frames">Создание фреймов</a>
+    <li><a href="part3/part3.htm#js" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part3/part3.htm#js">Фреймы и JavaScript</a>
+    <li><a href="part3/part3.htm#navig" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part3/part3.htm#navig">Навигационные панели</a>
+  </ul>
+</td>
+
+<td width=50% valign=top>
+  <a href="part4/part4.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part4/part4.htm">
+  <img src="pics/p4.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p4.gif" alt="Часть 4" width=188 height=23 border=0><br>
+  <font size=+1>Окна и динамическое управление документами</font></a><!--ignore-->
+<!--/ignore-->  <br>
+  <ul>
+    <li><a href="part4/part4.htm#windows" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part4/part4.htm#windows">Создание окон</a>
+    <li><a href="part4/part4.htm#close" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part4/part4.htm#close">Закрытие окон</a>
+    <li><a href="part4/part4.htm#onthefly" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part4/part4.htm#onthefly">Динамическое создание документов</a>
+    <li><a href="part4/part4.htm#vrml" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part4/part4.htm#vrml">Динамическое создание VRML-сцен</a>
+  </ul>
+</td>
+<tr>
+
+<td width=50% valign=top>
+  <a href="part5/part5.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part5/part5.htm">
+  <img src="pics/p5.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p5.gif" alt="Часть 5" width=188 height=23 border=0><br>
+  <font size=+1>Строка состояния и таймеры</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part5/part5.htm#statusbar" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part5/part5.htm#statusbar">Строка состояния</a>
+    <li><a href="part5/part5.htm#timeout" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part5/part5.htm#timeout">Таймеры</a>
+    <li><a href="part5/part5.htm#scroller" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part5/part5.htm#scroller">Прокрутка текста</a>
+  </ul>
+</td>
+
+
+<td width=50% valign=top>
+  <a href="part6/part6.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part6/part6.htm">
+  <img src="pics/p6.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p6.gif" alt="Часть 6" width=188 height=23 border=0><br>
+  <font size=+1>Предопределенные объекты</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part6/part6.htm#date" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part6/part6.htm#date">Объект Date</a>
+    <li><a href="part6/part6.htm#arrays" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part6/part6.htm#arrays">Объект Array</a>
+    <li><a href="part6/part6.htm#js1.0" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part6/part6.htm#js1.0">Массивы в JavaScript 1.0</a>
+    <li><a href="part6/part6.htm#math" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part6/part6.htm#math">Объект Math и генерация случайных чисел</a>
+  </ul>
+</td>
+<tr>
+
+<td width=50% valign=top>
+  <a href="part7/part7.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part7/part7.htm">
+  <img src="pics/p7.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p7.gif" alt="Часть 7" width=188 height=23 border=0><br>
+  <font size=+1>Формы</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part7/part7.htm#valforms" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part7/part7.htm#valforms">Проверка данных в форме</a>
+    <li><a href="part7/part7.htm#char" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part7/part7.htm#char">Проверка на наличие определенных символов</a>
+    <li><a href="part7/part7.htm#submit" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part7/part7.htm#submit">Передача данных из формы</a>
+    <li><a href="part7/part7.htm#focus" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part7/part7.htm#focus">Как выделить определенный элемент</a>
+  </ul>
+</td>
+
+<td width=50% valign=top>
+  <a href="part8/part8.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part8/part8.htm">
+  <img src="pics/p8.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p8.gif" alt="Часть 8" width=188 height=23 border=0><br>
+  <font size=+1>Объект Image</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part8/part8.htm#images" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part8/part8.htm#images">Изображения на web-странице</a>
+    <li><a href="part8/part8.htm#newimages" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part8/part8.htm#newimages">Загрузка новых изображений</a>
+    <li><a href="part8/part8.htm#preloading" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part8/part8.htm#preloading">Упреждающая загрузка изображений</a>
+    <li><a href="part8/part8.htm#events" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part8/part8.htm#events">Смена картинок как реакция на события, инициируемые самим читателем</a>
+  </ul>
+</td>
+<tr>
+
+<td width=50% valign=top>
+  <a href="part9/part9.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part9/part9.htm">
+  <img src="pics/p9.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p9.gif" alt="Часть 9" width=188 height=23 border=0><br>
+  <font size=+1>Слои I</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part9/part9.htm#layers" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part9/part9.htm#layers">Что такое слои?</a>
+    <li><a href="part9/part9.htm#creating" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part9/part9.htm#creating">Создание слоев</a>
+    <li><a href="part9/part9.htm#js" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part9/part9.htm#js">Слои и JavaScript</a>
+    <li><a href="part9/part9.htm#move" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part9/part9.htm#move">Перемещение слоев</a>
+  </ul>
+</td>
+
+<td width=50% valign=top>
+  <a href="part10/part10.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part10/part10.htm">
+  <img src="pics/p10.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p10.gif" alt="Часть 10" width=200 height=23 border=0><br>
+  <font size=+1>Слои II</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part10/part10.htm#clipping" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part10/part10.htm#clipping">Вырезка из слоя</a>
+    <li><a href="part10/part10.htm#nested" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part10/part10.htm#nested">Вложенные слои</a>
+    <li><a href="part10/part10.htm#transp" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part10/part10.htm#transp">Специальные эффекты с вложенными слоями</a>
+  </ul>
+</td>
+<tr>
+
+<td width=50% valign=top>
+  <a href="part11/part11.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part11/part11.htm">
+  <img src="pics/p11.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p11.gif" alt="Часть 11" width=200 height=23 border=0><br>
+  <font size=+1>Модель событий в JS 1.2</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part11/part11.htm#eventmodel" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part11/part11.htm#eventmodel">Новые события</a>
+    <li><a href="part11/part11.htm#obj" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part11/part11.htm#obj">Объект Event</a>
+    <li><a href="part11/part11.htm#capt" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part11/part11.htm#capt">Перехват события</a>
+  </ul>
+</td>
+
+<td width=50% valign=top>
+  <a href="part12/part12.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part12/part12.htm">
+  <img src="pics/p12.gif" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/pics/p12.gif" alt="Часть 12" width=200 height=23 border=0><br>
+  <font size=+1>Drag & drop</font></a><!--ignore-->
+<!--/ignore--><br>
+  <ul>
+    <li><a href="part12/part12.htm#dragndrop" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part12/part12.htm#dragndrop">Что такое drag & drop?</a>
+    <li><a href="part12/part12.htm#events" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part12/part12.htm#events">События в JavaScript 1.2, связанные с работой мыши</a>
+    <li><a href="part12/part12.htm#mouseevents" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part12/part12.htm#mouseevents">MouseDown, MouseMove и MouseUp</a>
+    <li><a href="part12/part12.htm#displ" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part12/part12.htm#displ">Показ движущихся объектов</a>
+    <li><a href="part12/part12.htm#drop" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part12/part12.htm#drop">"Оставляемые" объекты</a>
+    <li><a href="part12/part12.htm#impr" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/part12/part12.htm#impr">Улучшения</a>
+  </ul>
+</td>
+
+</table>
+</center>
+
+<p>
+<i>
+<font size=-1>
+&#169;1996,1997 by Stefan Koch<br>
+<a href="mail.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/mail.htm">e-mail</a>:skoch@rumms.uni-mannheim.de<br>
+http://rummelplatz.uni-mannheim.de/~skoch/<br>
+<a href="book.htm" tppabs="http://rummelplatz.uni-mannheim.de/~skoch/js/book.htm">Моя книга о JavaScript на немецком</a>
+</font>
+</i>
+
+</body>
+</html>

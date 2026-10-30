@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\implicitDll.obj",
+            "outputs": [
+                "x64\\Debug\\implicitDll.h.obj.dt.module.json",
+                "x64\\Debug\\implicitDll.h.obj.dt.d.json",
+                "x64\\Debug\\ImplicitDll.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

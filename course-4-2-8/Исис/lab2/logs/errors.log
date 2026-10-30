@@ -1,0 +1,6 @@
+WARN  15.09.2026 15:43:02 Task1 - Выбран неизвестный режим ввода: sadasd
+FATAL 15.09.2026 15:43:02 Main - Выполнение программы прервано
+java.lang.IllegalArgumentException: Режим не найден
+	at ru.bstu.itz221.dmitriev.lab2.Task1.getCoordinates(Task1.java:57)
+	at ru.bstu.itz221.dmitriev.lab2.Task1.run(Task1.java:23)
+	at ru.bstu.itz221.dmitriev.lab2.Main.main(Main.java:19)

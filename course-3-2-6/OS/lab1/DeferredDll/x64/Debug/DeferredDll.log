@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  deferredDll.cpp
+  dllmain.cpp
+  Generating Code...
+     Creating library C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab1\x64\Debug\DeferredDll.lib and object C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab1\x64\Debug\DeferredDll.exp
+  DeferredDll.vcxproj -> C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab1\x64\Debug\DeferredDll.dll

@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\acced\\onedrive\\desktop\\university\\course-3-2-6\\os\\lab3\\app\\app.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\acced\\onedrive\\desktop\\university\\course-3-2-6\\os\\lab3\\app\\resource.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="App/App.vcxproj" Id="b4551a1e-a45e-45d3-b8be-e2750f41f961" />
+  <Project Path="Await/Await.vcxproj" Id="e8fe4e89-3dce-4778-a88d-0cf1e6c33257" />
+  <Project Path="Matrix/Matrix.vcxproj" Id="98bd99ed-65e8-4f80-add2-559f4570f947" />
+</Solution>

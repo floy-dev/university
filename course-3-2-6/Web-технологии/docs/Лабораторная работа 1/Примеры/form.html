@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>Формы</title>
+ </head>
+ <body>
+
+<form name="form1">
+	<fieldset>
+		<legend>заголовок</legend>
+	<label for="textfield">Текстовое поле</label><input type="text" name="textfield" id="textfield"/><br />
+	<label for="textfield1">Текстовое поле</label><input readonly="readonly" value="только чтение" type="text" name="textfield1" id="textfield1"/><br />
+	<label>Пассворд</label><input type="password" name="pass" /><br />
+	<input type="radio" name="r1" value="вариант 1" /><label>вариант 1</label><br />
+	<input type="radio" name="r1" value="вариант 2" /><label>вариант 2</label><br />
+	<input type="radio" name="r2" value="вариант 1" /><label>вариант 1</label><br />
+	<input type="radio" name="r2" value="вариант 2" /><label>вариант 2</label><br />
+	<input type="checkbox" id="ch1" name="ch1" value="чекбокс 1" /><label for="ch1">чекбокс 1</label><br />
+	<input type="checkbox" id="ch2" name="ch2" checked="checked" value="чекбокс 2" /><label for="ch2">чекбокс 2</label><br />
+	<input type="button" name="btn" value="обычная кнопка" /><br />
+	<input type="submit" name="sbmt" value="Submit кнопка" /><br />
+	<label>выбираем файл</label><input type="file" name="fl" /><br />
+	<label for="sel">Селектбокс</label>
+	<select name="sel" id="sel">
+		<optgroup label="группа 1">
+			<option value="1">значение 1</option>
+			<option value="2">значение 2</option>
+		</optgroup>
+		<option value="3">значение 3</option>
+		<option value="4">значение 4</option>
+	</select><br />
+	<label for="ta">Поле</label><textarea>текст</textarea>
+	</fieldset>
+</form>
+ </body>
+</html>

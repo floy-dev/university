@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Заказ</title>
+	<script language="JavaScript">
+		var price = new Array();
+		price[0] = 1.5;
+		price[1] = 2.5;
+		price[2] = 2;
+		price[3] = 1;
+		function ref() {
+			var client = new Array();
+			client = window.showModalDialog("zakaz.html", "", "dialogWidth:400px; dialogHeight:300px");
+			var zakNumber = 0;
+			var zakSum = 0;
+			for(var i=0; i<4; i++){
+				zakNumber += client[i];
+				zakSum += client[i]*price[i];
+			}
+			Sum.value = zakSum;
+			Num.value ="Вы заказали "+zakNumber+" блюда";
+		}
+	</script>
+</head>
+<body>
+	<h2>Китайский ресторан</h2>
+	<input type="button" style="background:lightgrey" value="Заказ" onClick="ref();" />
+	<br /><br />
+	<input type="text" id="Num" size="25" />
+	<br /><br />
+	Сумма заказа, $:<br />
+	<input type="text" id="Sum" size="10" />
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title> Меню </title>
+	<script language = "JavaScript">
+	var zak = new Array();
+	for (var i=0; i<4; i++)
+		zak[i] = 0;
+	function outvalues() {
+		window.returnValue = zak;
+		window.close();
+	}
+	</script>
+</head>
+<body leftmargin=40 style="text-align:left; background:lightgrey"> <br />
+	<h2>Меню</h2>
+	<h3>Сделайте заказ</h3>
+	<form name="menu">
+		<input type="checkbox" name="menuOptions" onclick="zak[0]=1" />
+		Акульи плавники <br />
+		<input type="checkbox" name="menuOptions" onclick="zak[1]=1" />
+		Рыбий желудок <br />
+		<input type="checkbox" name="menuOptions" onclick="zak[2]=1" />
+		Летучая мышь <br />
+		<input type="checkbox" name="menuOptions" onclick="zak[3]=1" />
+		Ростки бамбука <br />
+	</form>
+	<input type="button" style="width:5em" value="OK" onclick="outvalues()" />
+</body>
+</html>

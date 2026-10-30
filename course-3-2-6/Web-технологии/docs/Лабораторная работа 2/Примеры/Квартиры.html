@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Список квартир</title>
+	<script language="JavaScript"> 
+	function ScreenInf() {
+		a1=this.street+"<br>\n";
+		a2=this.floar+"эт."+"/"+this.room+"к."+"/"+this.square+"кв.м"+"<br>\n";
+		a3=this.price+" руб."+"<br>\n";
+		document.write(a1,a2,a3,"<br>");
+		}
+	function Flat(str,fl,rm,sq,pr) {
+	this.street=str;
+	this.floar=fl;
+	this.room=rm;
+	this.square=sq;
+	this.price=pr;
+	this.ScreenInf=ScreenInf;
+	}
+	
+	</script>
+</head>
+
+<body>
+<H2>Продажа квартир</H2>
+<script language="JavaScript"> 
+	f1 = new Flat ("ул.Жукова",2,3,69,950000);
+	f2 = new Flat ("пр.Нефтянников",12,1,33,700000);
+	f3 = new Flat ("ул.Южная",7,4,82,1300000);
+	f1.ScreenInf();
+	f2.ScreenInf();
+	f3.ScreenInf();
+</script>
+	</body>
+</html>

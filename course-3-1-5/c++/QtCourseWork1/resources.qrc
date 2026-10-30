@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>library/letters.ru.dic</file>
+        <file>library/syllables.ru.dic</file>
+        <file>library/words.ru.dic</file>
+    </qresource>
+</RCC>

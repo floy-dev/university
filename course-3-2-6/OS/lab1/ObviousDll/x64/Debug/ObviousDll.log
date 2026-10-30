@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  dllmain.cpp
+  obviousDll.cpp
+  Generating Code...
+     Creating library C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab1\x64\Debug\ObviousDll.lib and object C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab1\x64\Debug\ObviousDll.exp
+  ObviousDll.vcxproj -> C:\Users\acced\OneDrive\Desktop\university\course-3-2-6\OS\lab1\x64\Debug\ObviousDll.dll

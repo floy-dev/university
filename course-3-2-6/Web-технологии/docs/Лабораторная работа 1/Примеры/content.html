@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>counter-increment</title>
+  <style type="text/css">
+   BODY {
+    counter-reset: heading; /* Инициируем счетчик */
+   }
+   H2:before {
+    counter-increment: heading; /* Указываем идентификатор счетчика */
+    content: "Глава " counter(heading) ". "; /* Выводим текст перед содержимым тега <H2> */
+   }
+  </style>
+ </head>
+ <body>
+  <h2>Теория ловли льва в пустыне</h2>
+  <h2>Методы инверсной кинематики</h2>
+  <h2>Ловля льва численными методами</h2>
+ </body>
+</html>
