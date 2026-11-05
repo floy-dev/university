@@ -55,7 +55,7 @@
     flex-shrink: 0;
 }
 
-.menu > a {
+.menu-item {
     align-items: center;
     text-decoration: none;
     color: #20372E;
@@ -63,11 +63,19 @@
     font-size: 16px;
     line-height: 23px;
     white-space: nowrap;
+    border: none;
+    background-color: white;
 
     &:hover {
         text-decoration: underline;
         color: #255D47;
     }
+}
+
+.nav-chevron{
+    width: 9px;
+    height: 9px;
+    flex: 0 0 auto;
 }
 
 .slogan {

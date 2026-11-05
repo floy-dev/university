@@ -1,6 +1,7 @@
+@import "src/js/lib/slimselect.css";
 @font-face {
   font-family: "Inter";
-  src: url("../data/font/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("../../data/font/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
   font-style: normal;
 }
 .header {
@@ -60,7 +61,7 @@
   flex-shrink: 0;
 }
 
-.menu > a {
+.menu-item {
   align-items: center;
   text-decoration: none;
   color: #20372E;
@@ -68,10 +69,18 @@
   font-size: 16px;
   line-height: 23px;
   white-space: nowrap;
+  border: none;
+  background-color: white;
 }
-.menu > a:hover {
+.menu-item:hover {
   text-decoration: underline;
   color: #255D47;
+}
+
+.nav-chevron {
+  width: 9px;
+  height: 9px;
+  flex: 0 0 auto;
 }
 
 .slogan {
@@ -463,6 +472,9 @@ main {
   border-radius: 8px;
   border: 1px solid #DCE2D9;
 }
+.contacts-form__input.error {
+  color: #dc3545;
+}
 .contacts-form__hint {
   font-size: 12px;
   font-weight: 400;
@@ -581,6 +593,10 @@ footer {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

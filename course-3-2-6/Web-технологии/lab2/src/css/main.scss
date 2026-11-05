@@ -408,6 +408,10 @@ main{
         width: 560px;
         border-radius: 8px;
         border: 1px solid #DCE2D9;
+
+        &.error{
+            color: #dc3545;
+        }
     }
 
     &__hint{

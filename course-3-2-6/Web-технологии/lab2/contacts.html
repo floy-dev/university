@@ -14,15 +14,22 @@
         <div class="logo">
             <img class="logo-img" src="data/logo.svg" alt="изображение">
             <div class="column">
-                <h3 class="color-inc">Свой ход</h3>
+                <h3 id="logo" class="color-inc">Свой ход</h3>
                 <p class="color-muted">Клуб настольных игр</p>
             </div>
         </div>
         <div class="menu row color-green">
-            <a href="index.html">Главная</a>
-            <a href="games.html">Игры</a>
-            <a href="schedule.html">Расписание</a>
-            <a href="contacts.html">Контакты</a>
+            <a class="menu-item" href="index.html">Главная</a>
+            <div class="menu-nav-slim">
+                <button type="button" class="menu-item menu-trigger" aria-expanded="false">
+                    Игры
+                    <svg class="nav-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"></path></svg>
+                </button>
+                <select tabindex="-1" aria-hidden="true" class="menu-nav-select hide"></select>
+                <div class="menu-nav-slim-content"></div>
+            </div>
+            <a class="menu-item" href="schedule.html">Расписание</a>
+            <a class="menu-item" href="contacts.html">Контакты</a>
         </div>
         <div class="slogan">
             <p class="color-muted">Играем вместе</p>
@@ -91,8 +98,12 @@
         </div>
         <div class="footer__bottom">
             <p>Лучшие игры, для лучших участников</p>
+            <p id="clock">00:00:00</p>
         </div>
     </div>
 </footer>
+
+<script type="module" src="src/js/script.js"></script>
+
 </body>
 </html>
