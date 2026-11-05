@@ -1,0 +1,423 @@
+body{
+    background-color: #F7F6F2;
+}
+
+main{
+    margin: 0 auto;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 0;
+}
+
+.about{
+    width: 1088px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+
+    &__data{
+        width: 600px;
+        margin-right: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__info{
+        font-size: 12px;
+        color: #255D47;
+        line-height: 17px;
+    }
+
+    &__title{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 70px;
+        color: #20372E;
+    }
+
+    &__description > p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        color: #647168;
+
+    }
+
+    &__view-all{
+        margin-right: 16px;
+    }
+}
+
+.about__posttitle > p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #647168;
+}
+
+.about-image{
+    width: 440px;
+    height: 300px;
+    background-image: url("/data/games.jpg");
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.steps {
+    background-color: #E9EFE8;
+    gap: 32px;
+    width: 1088px;
+    margin: 0 auto;
+}
+
+.step-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #20372E;
+}
+
+.step-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #647168;
+}
+
+.step {
+    width: 320px;
+    padding: 24px;
+    gap: 8px;
+}
+
+.cards-list{
+    width: 1088px;
+    margin: 0 auto;
+    gap: 24px;
+
+    &__title{
+        justify-content: space-between;
+    }
+
+    &__title > p{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 46px;
+        color: #20372E;
+    }
+
+    &__link{
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23px;
+        color: #255D47;
+        text-decoration: none;
+        align-items: center;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.cards{
+    width: 1088px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 346px);
+    gap: 24px;
+}
+
+.card{
+    width: 346px;
+    border-radius: 8px;
+    background-color: white;
+    gap: 16px;
+    padding: 16px;
+
+    &__img {
+        width: 314px;
+        height: 218px;
+        background-size: cover;
+        border-radius: 8px;
+    }
+
+    &__category{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: #647168;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+        color: #20372E;
+    }
+
+    &__description{
+        font-size: 14px;
+        line-height: 20px;
+        color: #647168;
+    }
+
+    &__info{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #255D47;
+    }
+}
+
+.games-about {
+    width: 1088px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.games{
+    &__top{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #255D47;
+    }
+    &__title{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 46px;
+        color: #20372E;
+    }
+    &__description{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #647168;
+    }
+}
+
+.tabs{
+    width: 1088px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.tab{
+    padding: 12px;
+    background-color: white;
+    border: none;
+    width: 180px;
+    border-radius: 8px;
+    color: #20372E;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    &-active{
+        background-color: #255D47;
+        color: white;
+    }
+
+    &:hover{
+        background-color: #255D47;
+        color: white;
+    }
+}
+
+.research-tab{
+    width: 1088px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: #E9EFE8;
+    padding: 32px;
+}
+
+.research-tab__pretitle{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #255D47;
+}
+
+.research-left{
+    gap: 8px;
+}
+
+.research-right{
+    display: flex;
+    align-items: center;
+}
+
+.research-tab__title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #20372E;
+}
+
+.research-tab__description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #647168;
+}
+
+.schedule-info{
+    background-color: white;
+    width: 1088px;
+    margin: 0 auto;
+    padding: 32px;
+    gap: 16px;
+}
+
+.schedule__title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #20372E;
+}
+
+.schedule__point{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #647168;
+}
+
+.schedule-table{
+    width: 1088px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #DCE2D9;
+    border-collapse: collapse;
+
+
+    &__head{
+        text-align: left;
+        color: #255D47;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 24px;
+    }
+
+    &__body{
+        padding: 24px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #20372E;
+    }
+}
+
+.contacts{
+    width: 1088px;
+    margin: 0 auto;
+    gap: 48px;
+}
+
+.contacts-left{
+    gap: 24px;
+    width: 440px;
+}
+
+.contacts-about-us{
+    padding: 24px;
+    gap: 24px;
+    background-color: #E9EFE8;
+    border-radius: 16px;
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+        color: #20372E;
+    }
+
+    &__label{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #20372E;
+    }
+
+    &__data{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #255D47;
+    }
+}
+
+.contacts-qa{
+    gap: 12px;
+
+    &__label{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 29px;
+        color: #20372E;
+    }
+
+    &__data{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #647168;
+    }
+}
+
+.contacts-right{
+    gap: 24px;
+}
+
+.contacts-form{
+    gap: 24px;
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+        color: #20372E;
+    }
+
+    &__description{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #647168;
+    }
+
+    &__label{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #20372E;
+        margin-bottom: 8px;
+    }
+
+    &__input{
+        padding: 16px;
+        width: 560px;
+        border-radius: 8px;
+        border: 1px solid #DCE2D9;
+
+        &.error{
+            color: #dc3545;
+        }
+    }
+
+    &__hint{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #647168;
+    }
+}
