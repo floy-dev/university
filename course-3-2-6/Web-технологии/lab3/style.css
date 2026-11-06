@@ -475,6 +475,13 @@ main {
 .contacts-form__input.error {
   color: #dc3545;
 }
+.contacts-form__error {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #dc3545;
+  margin-bottom: 8px;
+}
 .contacts-form__hint {
   font-size: 12px;
   font-weight: 400;

@@ -30,7 +30,7 @@ addEventListener('DOMContentLoaded', ev => {
 let view_all_games_button = document.querySelector(`.about__view-all`)
 if (view_all_games_button) {
     view_all_games_button.addEventListener('click', ev => {
-        window.location.href = 'games.html'
+        window.location.href = 'games.php'
     })
 }
 
@@ -38,7 +38,7 @@ if (view_all_games_button) {
 let ask_qa_button = document.querySelector(`.button-ask-qa`)
 if (ask_qa_button) {
     ask_qa_button.addEventListener('click', ev => {
-        window.location.href = 'contacts.html'
+        window.location.href = 'contacts.php'
     })
 }
 
@@ -46,7 +46,7 @@ if (ask_qa_button) {
 let view_schedule_button = document.querySelector(`.about__view-schedule`)
 if (view_schedule_button) {
     view_schedule_button.addEventListener('click', ev => {
-        window.location.href = 'schedule.html'
+        window.location.href = 'schedule.php'
     })
 }
 
@@ -72,9 +72,9 @@ let form = document.querySelector(`.contacts-form`)
 if (form !== null) {
     form.querySelector(`button[type="submit"]`).addEventListener('click', event => {
         event.preventDefault()
-        if (validateForm(form) !== true) {
-            return;
-        }
+        // if (validateForm(form) !== true) {
+        //     return;
+        // }
         form.submit()
     })
 }
@@ -159,7 +159,7 @@ async function loadSelect(){
         events: {
             beforeClose: (info) => {
                 if (info.option !== undefined) {
-                    window.location.href = 'games.html'
+                    window.location.href = 'games.php'
                 }
             }
         }
