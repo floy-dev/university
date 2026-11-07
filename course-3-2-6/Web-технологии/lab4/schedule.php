@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Свой ход - Расписание</title>
+</head>
+<body>
+
+    <?php include_once 'templates/header.php' ?>
+    <main>
+        <div class="games-about column">
+            <p class="games__top">ВСТРЕЧАЕМСЯ ЗА ИГРОЙ</p>
+            <p class="games__title">Расписание встреч</p>
+            <p class="games__description">Выберите удобный вечер. Для участия достаточно хорошего настроения</p>
+        </div>
+
+        <div class="research-tab row">
+            <div class="research-left column">
+                <p class="research-tab__pretitle">БЛИЖАЙШАЯ ВСТРЕЧА</p>
+                <p class="research-tab__title">Пятница · Вечер знакомств</p>
+                <p class="research-tab__description">19:00–22:00  /  Лёгкие игры для новых компаний</p>
+            </div>
+            <div class="research-right">
+                <button class="button-green button-ask-qa">Задать вопрос</button>
+            </div>
+        </div>
+
+        <table class="schedule-table">
+            <thead>
+                <tr style="background-color: #E9EFE8">
+                    <th scope="col" class="schedule-table__head">День</th>
+                    <th scope="col" class="schedule-table__head">Время</th>
+                    <th scope="col" class="schedule-table__head">Встреча</th>
+                    <th scope="col" class="schedule-table__head">Кому подойдёт</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="schedule-table__body">Пятница</td>
+                    <td class="schedule-table__body">19:00–22:00</td>
+                    <td class="schedule-table__body">Вечер знакомств</td>
+                    <td class="schedule-table__body">Новичкам</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__body">Суббота</td>
+                    <td class="schedule-table__body">19:00–22:00</td>
+                    <td class="schedule-table__body">Семейная игротека</td>
+                    <td class="schedule-table__body">Опытным игрокам</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__body">Суббота</td>
+                    <td class="schedule-table__body">19:00–22:00</td>
+                    <td class="schedule-table__body">Время стратегий</td>
+                    <td class="schedule-table__body">Опытным игрокам</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__body">Воскресенье</td>
+                    <td class="schedule-table__body">19:00–22:00</td>
+                    <td class="schedule-table__body">Играем всей компанией</td>
+                    <td class="schedule-table__body">Всем желающим</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="schedule-info column">
+            <p class="schedule__title">Если вы у нас впервые</p>
+            <div class="column">
+                <p class="schedule__point">• Приходите за 10 минут до начала</p>
+                <p class="schedule__point">• Выбирайте игры по настроению, а не по опыту</p>
+                <p class="schedule__point">• Задавайте вопросы ведущему — он поможет с правилами</p>
+            </div>
+        </div>
+    </main>
+    <?php include_once 'templates/footer.php' ?>
+
+<script type="module" src="src/js/script.js"></script>
+
+</body>
+</html>

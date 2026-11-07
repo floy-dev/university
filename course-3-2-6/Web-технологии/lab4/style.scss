@@ -1,0 +1,71 @@
+@import "src/css/font";
+@import "src/css/header";
+@import "src/css/main";
+@import "src/css/footer";
+
+// libs
+
+@import "src/js/lib/slimselect.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.color-inc{
+    color: #20372E;
+}
+.color-green{
+    color: #255D47;
+}
+.color-muted{
+    color: #647168;
+}
+
+.button-green {
+    background-color: #255D47;
+    border: none;
+    color: white;
+    padding: 12.5px 46px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Inter Semi Bold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.button-green:hover{
+    background-color: #20372E;
+}
+
+.button-white{
+    background-color: white;
+    border: none;
+    color: #255D47;
+    padding: 12.5px 46px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Inter Semi Bold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.button-white:hover{
+    color: #647168;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.hide{
+    display: none;
+}
